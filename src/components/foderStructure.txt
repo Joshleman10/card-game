@@ -1,0 +1,38 @@
+Components
+	|_CardImages
+	|	|_Exotic
+	|	|_Legendary
+	|	|_Rare
+	|	|_Common
+	|
+	|_css
+	|	|_*css for each component*
+	|
+	|_InfoForCards
+	|	|_Exotic.json
+	|	|_Legendary.json
+	|	|_Rare.json
+	|	|_Common.json
+	|	|_bootstrapCard.js
+	|
+	|_GamePlay
+	|	|_MainMenu.js
+	|	|_PrimaryGamePlay.js
+	|	|_GamePlayDivs
+	|		|_OpponentCards.js
+	|		|_UserCards.js
+	|		|_CenterScreen
+	|			|_OutOfBattle
+	|				|_Characters
+	|				|	|_Opponents
+	|				|		|_Training.js
+	|				|		|_*TBD*(more to come as the story builds out)
+	|				|	|_OtherCharacters
+	|				|_Texts
+	|				|	|_Rules.js
+	|				|	|_Tips.js
+	|				|	|_Story.js
+	|				|	|_*TBD*(more to come)
+	|				|
+	|				|_Scenes
+	|					|_*TBD*(scenes appropriate for story)

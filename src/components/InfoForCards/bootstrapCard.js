@@ -1,36 +1,25 @@
-import React, { Component } from "react";
-import cards from "../CardObjects.json";
+import React from "react";
 import {
-    Card, CardImg, CardText, CardBody, CardLink,
+    Card, CardText, CardBody, CardLink,
     CardTitle
 } from 'reactstrap';
 
-
-class BootstrapCard extends Component {
-    state = {
-        cards
-    }
-
-    render() {
-        return (
-            <ul className='boostrapCard'>
-                <Card>
-                    {this.state.cards.map(item => {
-                        <CardBody>
-                            <CardTitle>{item.name}</CardTitle>
-                        </CardBody>
-                            <img width="100%" src={item.image} alt="Card cap" />
-                            <CardBody>
-                                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                <CardLink href="#">Card Link</CardLink>
-                                <CardLink href="#">Another Link</CardLink>
-                            </CardBody>
-                                        })};
-
-                    </Card>
-            </ul>
-        );
-    };
+function BootstrapCard(props) {
+    return (
+        <Card>
+            <CardBody>
+                <CardTitle>
+                    {props.name}
+                </CardTitle>
+            </CardBody>
+            <img width="100%" src={props.image} alt={props.name} />
+            <CardBody>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <CardLink href="#">Card Link</CardLink>
+                <CardLink href="#">Another Link</CardLink>
+            </CardBody>
+        </Card>
+    );
 };
 
 export default BootstrapCard;

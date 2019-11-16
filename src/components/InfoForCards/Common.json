@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "name": "Greek Soldier",
+      "image": "components/CardImages/lionCub.jpg",
+      "attack": 1,
+      "defense": 2,
+      "ability cost": 1,
+      "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1."
+    },
+    {
+      "id": 2,
+      "name": "Persian Sparabara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/330px-Bill_Clinton.jpg",
+      "attack": 1,
+      "defense": 2,
+      "ability cost": 1,
+      "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random."
+    },
+    {
+      "id": 3,
+      "name": "Egyptian Soldier",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/330px-Donald_Trump_official_portrait.jpg",
+      "attack": 1,
+      "defense": 1,
+      "ability cost": 1,
+      "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage."
+    },
+    {
+      "id": 4,
+      "name": "Sumerian Infantry",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg/330px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg",
+      "attack": 1,
+      "defense": 1,
+      "ability cost": 1,
+      "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'"
+    },
+    {
+      "id": 5,
+      "name": "Hittite Soldier",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/330px-FDR_1944_Color_Portrait.jpg",
+      "attack": 1,
+      "defense": 2,
+      "ability cost": 1,
+      "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn."
+    },
+    {
+      "id": 6,
+      "name": "Shang Archer",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+      "attack": 1,
+      "defense": 1,
+      "ability cost": 1,
+      "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior."
+    },
+    {
+      "id": 7,
+      "name": "Phonecian Calvary",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg",
+      "attack": 2,
+      "defense": 1,
+      "ability cost": 1,
+      "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn."
+    },
+    {
+      "id": 8,
+      "name": "Assyrian Slinger",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/330px-Official_Portrait_of_President_Reagan_1981.jpg",
+      "attack": 1,
+      "defense": 1,
+      "ability cost": 1,
+      "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1."
+    },
+    {
+      "id": 9,
+      "name": "Mauryan Longbowman",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/President_Roosevelt_-_Pach_Bros.jpg/330px-President_Roosevelt_-_Pach_Bros.jpg",
+      "attack": 2,
+      "defense": 1,
+      "ability cost": 1,
+      "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1."
+    },
+    {
+      "id": 10,
+      "name": "Macedonian Warrior",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg/330px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg",
+      "attack": 2,
+      "defense": 2,
+      "ability cost": 1,
+      "ability": "Well Trained: Generate 1 Ability Point."
+    },
+    {
+      "id": 11,
+      "name": "Hunnic Warrior",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ulysses_S._Grant_1870-1880.jpg/330px-Ulysses_S._Grant_1870-1880.jpg",
+      "attack": 1,
+      "defense": 2,
+      "ability cost": 1,
+      "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage."
+    },
+    {
+      "id": 12,
+      "name": "Early Roman Infantry",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg/330px-Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg",
+      "attack": 1,
+      "defense": 2,
+      "ability cost": 1,
+      "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it."
+    }
+  ]

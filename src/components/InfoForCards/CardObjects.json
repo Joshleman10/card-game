@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Lion Cub",
-      "image": "./CardImages/lionCub.jpg"
+      "image": "components/CardImages/lionCub.jpg"
     },
     {
       "id": 2,

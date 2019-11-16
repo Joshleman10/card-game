@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Lion Cub",
+      "image": "components/CardImages/lionCub.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bill Clinton",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/330px-Bill_Clinton.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Donald Trump",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/330px-Donald_Trump_official_portrait.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dwight Eisenhour",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg/330px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Franklin Roosevelt",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/330px-FDR_1944_Color_Portrait.jpg"
+    },
+    {
+      "id": 6,
+      "name": "George Washington",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Barack Obama",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Ronald Reagan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/330px-Official_Portrait_of_President_Reagan_1981.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Teddy Roosevelt",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/President_Roosevelt_-_Pach_Bros.jpg/330px-President_Roosevelt_-_Pach_Bros.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Thomas Jefferson",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg/330px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Usysses S. Grant",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ulysses_S._Grant_1870-1880.jpg/330px-Ulysses_S._Grant_1870-1880.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Woodrow Wilson",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg/330px-Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg"
+    }
+  ]
