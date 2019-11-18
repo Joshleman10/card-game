@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BootstrapCard from './InfoForCards/bootstrapCard';
-import cards from "./InfoForCards/CardObjects.json";
+import cards from "./InfoForCards/Common.json";
 import './css/MainMenu.css';
 
 // const shuffle = require("shuffle-array");

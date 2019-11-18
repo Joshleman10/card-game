@@ -1,14 +1,14 @@
 Components
-	|_CardImages
-	|	|_Exotic
-	|	|_Legendary
-	|	|_Rare
-	|	|_Common
 	|
 	|_css
 	|	|_*css for each component*
 	|
 	|_InfoForCards
+	|	|_CardImages
+	|	|	|_Exotic
+	|	|	|_Legendary
+	|	|	|_Rare
+	|	|	|_Common
 	|	|_Exotic.json
 	|	|_Legendary.json
 	|	|_Rare.json
@@ -16,7 +16,7 @@ Components
 	|	|_bootstrapCard.js
 	|
 	|_GamePlay
-	|	|_MainMenu.js
+	|	|_MainScreen.js
 	|	|_PrimaryGamePlay.js
 	|	|_GamePlayDivs
 	|		|_OpponentCards.js

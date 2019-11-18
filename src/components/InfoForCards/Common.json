@@ -1,8 +1,8 @@
 [
     {
       "id": 1,
-      "name": "Greek Soldier",
-      "image": "components/CardImages/lionCub.jpg",
+      "name": "Greek Hoplite",
+      "image": "./CardImages/Common/hoplite.jpg",
       "attack": 1,
       "defense": 2,
       "ability cost": 1,
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Persian Sparabara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/330px-Bill_Clinton.jpg",
+      "image": "./CardImages/Common/sparabara.png",
       "attack": 1,
       "defense": 2,
       "ability cost": 1,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "name": "Hittite Soldier",
+      "name": "Hittite Warrior",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/330px-FDR_1944_Color_Portrait.jpg",
       "attack": 1,
       "defense": 2,
