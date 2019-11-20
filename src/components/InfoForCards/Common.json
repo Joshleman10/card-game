@@ -20,7 +20,7 @@
     {
       "id": 3,
       "name": "Egyptian Soldier",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/330px-Donald_Trump_official_portrait.jpg",
+      "image": "./CardImages/Common/egyptian.jpg",
       "attack": 1,
       "defense": 1,
       "ability cost": 1,
@@ -29,7 +29,7 @@
     {
       "id": 4,
       "name": "Sumerian Infantry",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg/330px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg",
+      "image": "./CardImages/Common/sumerian.png",
       "attack": 1,
       "defense": 1,
       "ability cost": 1,
@@ -38,7 +38,7 @@
     {
       "id": 5,
       "name": "Hittite Warrior",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/330px-FDR_1944_Color_Portrait.jpg",
+      "image": "./CardImages/Common/hittite.jpg",
       "attack": 1,
       "defense": 2,
       "ability cost": 1,
@@ -47,7 +47,7 @@
     {
       "id": 6,
       "name": "Shang Archer",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+      "image": "./CardImages/Common/shang_archer.jpg",
       "attack": 1,
       "defense": 1,
       "ability cost": 1,
@@ -56,7 +56,7 @@
     {
       "id": 7,
       "name": "Phonecian Calvary",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg",
+      "image": "./CardImages/Common/ponecian_calvary.jpg",
       "attack": 2,
       "defense": 1,
       "ability cost": 1,
@@ -65,7 +65,7 @@
     {
       "id": 8,
       "name": "Assyrian Slinger",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/330px-Official_Portrait_of_President_Reagan_1981.jpg",
+      "image": "./CardImages/Common/assyrian.jpg",
       "attack": 1,
       "defense": 1,
       "ability cost": 1,
@@ -73,8 +73,8 @@
     },
     {
       "id": 9,
-      "name": "Mauryan Longbowman",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/President_Roosevelt_-_Pach_Bros.jpg/330px-President_Roosevelt_-_Pach_Bros.jpg",
+      "name": "Mauritanian Longbowman",
+      "image": "./CardImages/Common/mauritanian.jpg",
       "attack": 2,
       "defense": 1,
       "ability cost": 1,
@@ -83,7 +83,7 @@
     {
       "id": 10,
       "name": "Macedonian Warrior",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg/330px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg",
+      "image": "./CardImages/Common/macedonian.jpg",
       "attack": 2,
       "defense": 2,
       "ability cost": 1,
@@ -92,7 +92,7 @@
     {
       "id": 11,
       "name": "Hunnic Warrior",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ulysses_S._Grant_1870-1880.jpg/330px-Ulysses_S._Grant_1870-1880.jpg",
+      "image": "./CardImages/Common/hunnic.jpg",
       "attack": 1,
       "defense": 2,
       "ability cost": 1,
@@ -101,7 +101,7 @@
     {
       "id": 12,
       "name": "Early Roman Infantry",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg/330px-Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg",
+      "image": "./CardImages/Common/roman.jpg",
       "attack": 1,
       "defense": 2,
       "ability cost": 1,
