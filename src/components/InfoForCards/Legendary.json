@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Immortal",
+    "name": "Spartacus",
     "image": "./CardImages/Common/hoplite.jpg",
     "attack": 1,
     "defense": 2,
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "Companions",
+    "name": "Alexander's Companions",
     "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,

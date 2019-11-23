@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Legionary",
+    "name": "Centurion",
     "image": "./CardImages/Common/sparabara.png",
     "attack": 1,
     "defense": 2,
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "Companions",
+    "name": "Alexander's Companions",
     "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,
