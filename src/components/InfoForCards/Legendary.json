@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Spartacus",
+    "name": "Alexander the Great",
     "image": "./CardImages/Common/hoplite.jpg",
     "attack": 1,
     "defense": 2,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Legionary",
+    "name": "Julius Cesar",
     "image": "./CardImages/Common/sparabara.png",
     "attack": 1,
     "defense": 2,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Spartan",
+    "name": "Hannibal Barca",
     "image": "./CardImages/Common/egyptian.jpg",
     "attack": 1,
     "defense": 1,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "Medjay",
+    "name": "Achilles",
     "image": "./CardImages/Common/sumerian.png",
     "attack": 1,
     "defense": 1,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "name": "Sacred Band of Thebes",
+    "name": "Hector of Troy",
     "image": "./CardImages/Common/hittite.jpg",
     "attack": 1,
     "defense": 2,
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "Alexander's Companions",
+    "name": "Leonidas",
     "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "name": "Praetorian Guard",
+    "name": "Han Xin",
     "image": "./CardImages/Common/ponecian_calvary.jpg",
     "attack": 2,
     "defense": 1,
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "name": "Shaolin Monk",
+    "name": "Xerxes I",
     "image": "./CardImages/Common/assyrian.jpg",
     "attack": 1,
     "defense": 1,
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "name": "Batavi",
+    "name": "Hammurabi",
     "image": "./CardImages/Common/mauritanian.jpg",
     "attack": 2,
     "defense": 1,
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "name": "Numidian Cavalry",
+    "name": "Ramses II",
     "image": "./CardImages/Common/macedonian.jpg",
     "attack": 2,
     "defense": 2,
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "name": "Yue Soldier",
+    "name": "Ashoka",
     "image": "./CardImages/Common/hunnic.jpg",
     "attack": 1,
     "defense": 2,
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "name": "Cataphract",
+    "name": "Attila the Hun",
     "image": "./CardImages/Common/roman.jpg",
     "attack": 1,
     "defense": 2,

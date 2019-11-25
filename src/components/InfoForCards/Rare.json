@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Immortal",
-    "image": "./CardImages/Common/hoplite.jpg",
+    "image": "./CardImages/Rare/immortal.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Centurion",
-    "image": "./CardImages/Common/sparabara.png",
+    "image": "./CardImages/Rare/centurion.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Spartan",
-    "image": "./CardImages/Common/egyptian.jpg",
+    "image": "./CardImages/Rare/spartan.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Alexander the Great",
+    "name": "Gilgamesh",
     "image": "./CardImages/Common/hoplite.jpg",
     "attack": 1,
     "defense": 2,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Julius Cesar",
+    "name": "Hercules",
     "image": "./CardImages/Common/sparabara.png",
     "attack": 1,
     "defense": 2,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Hannibal Barca",
+    "name": "Ares",
     "image": "./CardImages/Common/egyptian.jpg",
     "attack": 1,
     "defense": 1,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "Achilles",
+    "name": "Guan Di",
     "image": "./CardImages/Common/sumerian.png",
     "attack": 1,
     "defense": 1,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "name": "Hector",
+    "name": "Rostam",
     "image": "./CardImages/Common/hittite.jpg",
     "attack": 1,
     "defense": 2,
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "Leonidas",
+    "name": "Montu",
     "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "name": "Han Xin",
+    "name": "Mangala",
     "image": "./CardImages/Common/ponecian_calvary.jpg",
     "attack": 2,
     "defense": 1,
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "name": "Xerxes I",
+    "name": "Ishtar",
     "image": "./CardImages/Common/assyrian.jpg",
     "attack": 1,
     "defense": 1,
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "name": "Hammurabi",
+    "name": "Belus",
     "image": "./CardImages/Common/mauritanian.jpg",
     "attack": 2,
     "defense": 1,
@@ -82,29 +82,11 @@
   },
   {
     "id": 10,
-    "name": "Ramses II",
+    "name": "Perseus",
     "image": "./CardImages/Common/macedonian.jpg",
     "attack": 2,
     "defense": 2,
     "ability cost": 1,
     "ability": "Well Trained: Generate 1 Ability Point."
-  },
-  {
-    "id": 11,
-    "name": "Ashoka",
-    "image": "./CardImages/Common/hunnic.jpg",
-    "attack": 1,
-    "defense": 2,
-    "ability cost": 1,
-    "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage."
-  },
-  {
-    "id": 12,
-    "name": "Hercules",
-    "image": "./CardImages/Common/roman.jpg",
-    "attack": 1,
-    "defense": 2,
-    "ability cost": 1,
-    "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it."
   }
 ]
