@@ -6,7 +6,7 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1."
+    "ability": ""
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random."
+    "ability": ""
   },
   {
     "id": 3,
