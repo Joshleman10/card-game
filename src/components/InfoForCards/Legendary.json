@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Alexander the Great",
-    "image": "./CardImages/Common/hoplite.jpg",
+    "image": "./CardImages/Legendary/AlexanderTheGreat.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Julius Cesar",
-    "image": "./CardImages/Common/sparabara.png",
+    "image": "./CardImages/Legendary/JuliusCaesar.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Hannibal Barca",
-    "image": "./CardImages/Common/egyptian.jpg",
+    "image": "./CardImages/Legendary/Hannibal.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Achilles",
-    "image": "./CardImages/Common/sumerian.png",
+    "image": "./CardImages/Legendary/Achilles.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Hector of Troy",
-    "image": "./CardImages/Common/hittite.jpg",
+    "image": "./CardImages/Legendary/Hector.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Leonidas",
-    "image": "./CardImages/Common/shang_archer.jpg",
+    "image": "./CardImages/Legendary/Leonidas.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Han Xin",
-    "image": "./CardImages/Common/ponecian_calvary.jpg",
+    "image": "./CardImages/Legendary/HanXin.png",
     "attack": 2,
     "defense": 1,
     "ability cost": 1,
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "name": "Xerxes I",
-    "image": "./CardImages/Common/assyrian.jpg",
+    "image": "./CardImages/Legendary/Xerxes.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "name": "Hammurabi",
-    "image": "./CardImages/Common/mauritanian.jpg",
+    "image": "./CardImages/Legendary/Hammurabi.jpg",
     "attack": 2,
     "defense": 1,
     "ability cost": 1,
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "name": "Ramses II",
-    "image": "./CardImages/Common/macedonian.jpg",
+    "image": "./CardImages/Legendary/Ramses.jpg",
     "attack": 2,
     "defense": 2,
     "ability cost": 1,
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "name": "Ashoka",
-    "image": "./CardImages/Common/hunnic.jpg",
+    "image": "./CardImages/Legendary/Ashoka.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "name": "Attila the Hun",
-    "image": "./CardImages/Common/roman.jpg",
+    "image": "./CardImages/Legendary/AttilaTheHun.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
