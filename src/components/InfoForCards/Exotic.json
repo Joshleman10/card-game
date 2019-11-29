@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Gilgamesh",
-    "image": "./CardImages/Common/hoplite.jpg",
+    "image": "./CardImages/Exotic/gilgamesh.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Hercules",
-    "image": "./CardImages/Common/sparabara.png",
+    "image": "./CardImages/Exotic/hercules.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Ares",
-    "image": "./CardImages/Common/egyptian.jpg",
+    "image": "./CardImages/Exotic/ares.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Guan Di",
-    "image": "./CardImages/Common/sumerian.png",
+    "image": "./CardImages/Exotic/guandi.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Rostam",
-    "image": "./CardImages/Common/hittite.jpg",
+    "image": "./CardImages/Exotic/rostam.jpg",
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Montu",
-    "image": "./CardImages/Common/shang_archer.jpg",
+    "image": "./CardImages/Exotic/montu.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Mangala",
-    "image": "./CardImages/Common/ponecian_calvary.jpg",
+    "image": "./CardImages/Exotic/mangala.jpg",
     "attack": 2,
     "defense": 1,
     "ability cost": 1,
@@ -65,25 +65,16 @@
   {
     "id": 8,
     "name": "Ishtar",
-    "image": "./CardImages/Common/assyrian.jpg",
+    "image": "./CardImages/Exotic/ishtar.jpg",
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
     "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1."
   },
   {
-    "id": 9,
-    "name": "Belus",
-    "image": "./CardImages/Common/mauritanian.jpg",
-    "attack": 2,
-    "defense": 1,
-    "ability cost": 1,
-    "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1."
-  },
-  {
     "id": 10,
     "name": "Perseus",
-    "image": "./CardImages/Common/macedonian.jpg",
+    "image": "./CardImage./Exotic/perseus.jpeg",
     "attack": 2,
     "defense": 2,
     "ability cost": 1,
