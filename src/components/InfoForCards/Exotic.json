@@ -72,9 +72,9 @@
     "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1."
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Perseus",
-    "image": "./CardImage./Exotic/perseus.jpeg",
+    "image": "./CardImage/Exotic/perseus.jpeg",
     "attack": 2,
     "defense": 2,
     "ability cost": 1,

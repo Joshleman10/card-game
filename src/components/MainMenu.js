@@ -1,31 +1,41 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from 'reactstrap';
 import BootstrapCard from './InfoForCards/bootstrapCard';
-import cards from "./InfoForCards/Common.json";
+import common from "./InfoForCards/Common.json";
+import rare from "./InfoForCards/Rare.json";
+import legendary from "./InfoForCards/Legendary.json";
+import exotic from "./InfoForCards/Exotic.json";
 import './css/MainMenu.css';
 
 // const shuffle = require("shuffle-array");
+let allCards = [common, rare, legendary, exotic];
+let mergedDeckOfAllCards = [].concat.apply([], allCards);
 
 class MainMenu extends Component {
     state = {
-        hero: cards
+        hero: mergedDeckOfAllCards,
+        common: common,
+        rare: rare,
+        legendary: legendary,
+        exotic: exotic
     };
 
-    // Map over this.state.friends and render a PresPics component for each friend object
     render() {
         return (
-            <div className='mainMenuWrapper'>
-                <ul className="gallery">
-                        {this.state.hero.map((item, index) => (
-                            <div key={item.id} onClick={((e) => this.handleClick(e, item))}>
-                                <BootstrapCard
-                                    id={item.id}
-                                    name={item.name}
-                                    image={item.image}
-                                />
-                            </div>
-                        ))}
-                </ul>
-            </div>
+            <Container >
+                <Row>
+                    {this.state.hero.map((item, index) => (
+                        <Col sm="3">
+                            <BootstrapCard
+                                key={item.id} onClick={((e) => this.handleClick(e, item))}
+                                id={item.id}
+                                name={item.name}
+                                image={item.image}
+                            />
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
         );
     }
 }

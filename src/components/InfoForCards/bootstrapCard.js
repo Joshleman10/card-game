@@ -3,22 +3,25 @@ import {
     Card, CardText, CardBody, CardLink,
     CardTitle
 } from 'reactstrap';
+import "../css/bootstrapCard.css"
 
 function BootstrapCard(props) {
     return (
-        <Card>
+        <div>
+        <Card className="">
+            <CardTitle className="cardTitle">
+                {props.name}
+            </CardTitle>
+            <img className="cardImage" src={process.env.PUBLIC_URL + props.image} alt={props.name} />
             <CardBody>
-                <CardTitle>
-                    {props.name}
-                </CardTitle>
-            </CardBody>
-            <img width="100%" height="400px" src={process.env.PUBLIC_URL + props.image} alt={props.name} />
-            <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
+                <CardText className="cardText">Enter Text Here</CardText>
+                <div className="linkDiv">
+                    <CardLink href="#">Card Link</CardLink>
+                    <CardLink href="#">Another Link</CardLink>
+                </div>
             </CardBody>
         </Card>
+        </div>
     );
 };
 
