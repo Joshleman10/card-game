@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import MainMenu from './components/MainMenu'
+import StartMenu from './components/startMenu'
 import MainNavBar from './components/navbar'
-import { Container, Row, Col, Collapse } from 'reactstrap';
+import { Container, Row, Col, Media } from 'reactstrap';
 
 function App() {
   return (
     <Container>
+        <Media object fluid data-src="../public/GameArt/MMGameArt.jpg" alt="Primary Background Image" />
       <Row>
         <Col>
           <MainNavBar></MainNavBar>
@@ -14,7 +15,7 @@ function App() {
       </Row>
       <Row>
         <Col>
-          <MainMenu></MainMenu>
+          <StartMenu></StartMenu>
         </Col>
       </Row>
     </Container>

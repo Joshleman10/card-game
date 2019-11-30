@@ -55,15 +55,6 @@
   },
   {
     "id": 7,
-    "name": "Mangala",
-    "image": "./CardImages/Exotic/mangala.jpg",
-    "attack": 2,
-    "defense": 1,
-    "ability cost": 1,
-    "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn."
-  },
-  {
-    "id": 8,
     "name": "Ishtar",
     "image": "./CardImages/Exotic/ishtar.jpg",
     "attack": 1,
@@ -72,9 +63,9 @@
     "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1."
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Perseus",
-    "image": "./CardImage/Exotic/perseus.jpeg",
+    "image": "./CardImages/Exotic/perseus.jpeg",
     "attack": 2,
     "defense": 2,
     "ability cost": 1,

@@ -1,3 +1,4 @@
+-figure out background image with reactstrap
 -complete building out characters and card objects
 -figure out how to get common, rare, legendary, and exotic objects into an array, and render that as a card
 -build out main menu
