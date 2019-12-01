@@ -7,12 +7,6 @@ import { Container, Row, Col, Media } from 'reactstrap';
 function App() {
   return (
     <Container>
-        <Media object fluid data-src="../public/GameArt/MMGameArt.jpg" alt="Primary Background Image" />
-      <Row>
-        <Col>
-          <MainNavBar></MainNavBar>
-        </Col>
-      </Row>
       <Row>
         <Col>
           <StartMenu></StartMenu>

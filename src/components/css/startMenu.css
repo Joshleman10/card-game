@@ -1,0 +1,12 @@
+.jumbotron{
+    margin-top:2.5%;
+    height: 100vh;
+    background-image: url("../GameArt/MMGameArt.jpg");
+    background-size: cover;
+}
+
+.jumbotron button{
+    width:90%;
+    margin-left:5%;
+    margin-bottom:20px;
+}
