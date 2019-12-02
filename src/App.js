@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import StartMenu from './components/startMenu'
-import MainNavBar from './components/navbar'
+import PrimaryJumbotron from './components/jumbotron'
+// import StartMenu from './components/startMenu'
 import { Container, Row, Col, Media } from 'reactstrap';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Container>
       <Row>
         <Col>
-          <StartMenu></StartMenu>
+          <PrimaryJumbotron></PrimaryJumbotron>
         </Col>
       </Row>
     </Container>

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from 'reactstrap';
-import BootstrapCard from './InfoForCards/bootstrapCard';
-import common from "./InfoForCards/Common.json";
-import rare from "./InfoForCards/Rare.json";
-import legendary from "./InfoForCards/Legendary.json";
-import exotic from "./InfoForCards/Mythical.json";
-import './css/MainMenu.css';
+import BootstrapCard from 'bootstrapCard';
+import common from "Common.json";
+import rare from "Rare.json";
+import legendary from "Legendary.json";
+import exotic from "Mythical.json";
+import '../css/MainMenu.css';
 
 // const shuffle = require("shuffle-array");
 let allCards = [common, rare, legendary, exotic];
