@@ -4,13 +4,15 @@ import StartMenu from './startMenu'
 
 class PrimaryJumbotron extends Component {
     state = {
-        gameInterface: Jumbotron
+        gameInterface: [<StartMenu></StartMenu>]
     };
 
     render() {
         return (
             <Jumbotron fluid className="text-center">
-                <StartMenu></StartMenu>
+                {this.state.gameInterface.map((item, index)=>(
+                    <StartMenu></StartMenu>
+                ))}
             </Jumbotron>
         );
     };

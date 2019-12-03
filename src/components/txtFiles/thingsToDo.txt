@@ -1,4 +1,4 @@
--handleclick events on start menu
+-move jsx into state array and "setState" to new jsx.  Also need to pass props correctly for buttons from start menu to jumbotron
 -complete building out characters and card objects
 -figure out how to get common, rare, legendary, and exotic objects into an array, and render that as a card
 -build out main menu

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from 'reactstrap';
-import BootstrapCard from 'bootstrapCard';
-import common from "Common.json";
-import rare from "Rare.json";
-import legendary from "Legendary.json";
-import exotic from "Mythical.json";
+import BootstrapCard from './bootstrapCard';
+import common from "./Common.json";
+import rare from "./Rare.json";
+import legendary from "./Legendary.json";
+import exotic from "./Mythical.json";
 import '../css/MainMenu.css';
 
 // const shuffle = require("shuffle-array");
 let allCards = [common, rare, legendary, exotic];
 let mergedDeckOfAllCards = [].concat.apply([], allCards);
 
-class MainMenu extends Component {
+class ViewAllCards extends Component {
     state = {
         hero: mergedDeckOfAllCards,
         common: common,
@@ -80,4 +80,4 @@ class MainMenu extends Component {
     }
 }
 
-export default MainMenu;
+export default ViewAllCards;

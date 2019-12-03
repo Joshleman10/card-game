@@ -3,10 +3,11 @@ import {
     Container, Button
 } from 'reactstrap';
 import './css/startMenu.css'
+import ViewAllCards from './InfoForCards/ViewAllCards'
 
 class StartMenu extends Component {
     state = {
-        startMenuButtons: [1, 2, 3, 4]
+        startMenuButtons: [<ViewAllCards></ViewAllCards>]
     };
 
     handleClick = (e, index) => {
