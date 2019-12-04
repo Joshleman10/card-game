@@ -7,12 +7,15 @@ import ViewAllCards from './InfoForCards/ViewAllCards'
 
 class StartMenu extends Component {
     state = {
-        startMenuButtons: [<ViewAllCards></ViewAllCards>]
+        startMenuButtons: [1]
     };
 
     handleClick = (e, index) => {
         if (index === 1) {
-            this.setState()
+            console.log("testing");
+            this.state.startMenuButtons.unshift(<ViewAllCards></ViewAllCards>)
+            console.log(this.state.startMenuButtons);
+            this.setState({startMenuButtons: this.state.startMenuButtons})
         }
         else if (index === 2) {
 
