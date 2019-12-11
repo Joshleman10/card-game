@@ -31,15 +31,7 @@ class StartMenu extends Component {
     render() {
         return (
             <div>
-                <Container fluid>
-                    <h1 className="display-3">Age of Antiquity</h1>
-                    <p className="lead">Click below to begin your conquest of the ancient world.</p>
-                </Container>
-                {this.state.startMenuButtons.map((button, index) => (
-                    <Button key={index} color="primary" onClick={((e) => this.handleClick(e, button))}>
-                        {button.name ? button.name : index + 1}
-                    </Button>
-                ))}
+
             </div>
         );
     };

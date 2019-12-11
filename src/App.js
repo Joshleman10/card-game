@@ -7,11 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 function App() {
   return (
     <Container>
-      <Row>
-        <Col>
-          <PrimaryJumbotron></PrimaryJumbotron>
-        </Col>
-      </Row>
+      <PrimaryJumbotron></PrimaryJumbotron>
     </Container>
   );
 }
