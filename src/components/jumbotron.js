@@ -1,23 +1,30 @@
 import React, { Component } from "react";
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import StartMenu from './startMenu'
-import MainStartButton from './mainStartButton'
 import ViewAllCards from './InfoForCards/ViewAllCards'
 import './css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
     state = {
-        gameInterface: [<StartMenu></StartMenu>],
-        startMenuButtons: [1, 2, 3, 4]
+        gameInterface: [<StartMenu></StartMenu>]
     };
 
-    handleClick = (e) => {
-        console.log("hi")
+    constructor(props) {
+        super(props)
+
+        this.handler = this.handler.bind(this)
+    }
+
+    handler() {
+        // this.setState({
+            
+        // })
+        console.log()
     }
     render() {
         return (
             <Jumbotron fluid className="text-center">
-                <MainStartButton></MainStartButton>
+                <StartMenu handler={this.handler}></StartMenu>
             </Jumbotron>
         );
     };
