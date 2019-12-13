@@ -9,11 +9,19 @@ class StartMenu extends Component {
         startMenuButtons: ["New Game", "Continue Saved Game", "View All Cards"]
     };
 
+    
+    handleClick = (e, name) => {
+        console.log(name);
+        let buttonName = name;
+        // console.log(buttonName);
+        this.props.handleButtonClick(buttonName);            
+    }
+
     render() {
         return (
             <Container>
                 {this.state.startMenuButtons.map((item, index) => (
-                    <Button onClick={this.props.handler} name={item} key={index}>{item}</Button>
+                    <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                 ))}
             </Container>
         );

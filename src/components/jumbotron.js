@@ -15,16 +15,14 @@ class PrimaryJumbotron extends Component {
         this.handler = this.handler.bind(this)
     }
 
-    handler() {
-        // this.setState({
-            
-        // })
-        console.log()
+    handler = (buttonName) => {
+        console.log(buttonName);
     }
+
     render() {
         return (
             <Jumbotron fluid className="text-center">
-                <StartMenu handler={this.handler}></StartMenu>
+                <StartMenu handleButtonClick={this.handler}></StartMenu>
             </Jumbotron>
         );
     };
