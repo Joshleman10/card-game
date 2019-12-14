@@ -11,7 +11,6 @@ class StartMenu extends Component {
 
     
     handleClick = (e, name) => {
-        console.log(name);
         let buttonName = name;
         // console.log(buttonName);
         this.props.handleButtonClick(buttonName);            

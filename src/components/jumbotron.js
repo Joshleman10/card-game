@@ -5,26 +5,35 @@ import ViewAllCards from './InfoForCards/ViewAllCards'
 import './css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
+
     state = {
-        gameInterface: [<StartMenu></StartMenu>]
+        gameInterface: ["Start Menu"]
     };
 
-    constructor(props) {
-        super(props)
-
-        this.handler = this.handler.bind(this)
-    }
-
     handler = (buttonName) => {
-        console.log(buttonName);
+        if (buttonName === "View All Cards") {
+            this.state.gameInterface.unshift(buttonName)
+            this.state.gameInterface.pop();
+            console.log(this.state.gameInterface);
+            this.setState({ gameInterface: this.state.gameInterface })
+        }
     }
 
     render() {
-        return (
-            <Jumbotron fluid className="text-center">
-                <StartMenu handleButtonClick={this.handler}></StartMenu>
-            </Jumbotron>
-        );
+        if (this.state.gameInterface[0] === "Start Menu") {
+            return (
+                <Jumbotron fluid className="text-center">
+                    <StartMenu handleButtonClick={this.handler}></StartMenu>
+                </Jumbotron>
+            );
+        }
+        else if (this.state.gameInterface[0] === "View All Cards"){
+            return (
+                <Jumbotron fluid className="text-center">
+                    <ViewAllCards handleButtonClick={this.handler}></ViewAllCards>
+                </Jumbotron>
+            );
+        }
     };
 };
 
