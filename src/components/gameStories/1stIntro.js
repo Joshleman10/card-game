@@ -10,10 +10,17 @@ class IntroToGameStory extends Component {
     };
 
     handleClick = (e, name) => {
-        if (name === "Continue Story")
+        if (name === "Continue Story") {
             this.state.slideNumber.push(this.state.slideNumber.length + 1)
-        console.log(this.state.slideNumber.length);
-        this.setState({ slideNumber: this.state.slideNumber })
+            this.setState({ slideNumber: this.state.slideNumber })
+            if (this.state.slideNumber.length === 6) {
+                this.state.continueStory.pop()
+                this.state.continueStory.push("Learn To Play", "Start Your Quest")
+            }
+        }
+        else if (name === "Start Your Quest"){
+            this.props.handleButtonClick(name);            
+        }
     }
 
     render() {
@@ -83,7 +90,7 @@ class IntroToGameStory extends Component {
             return (
                 <Container>
                     <p>"The glory of the ancient ones lives on in these cards." he continues, "You must conquor all opponents to retrun home"</p>
-                    <p>You think to yourself "But I have school tomorrow!"</p>
+                    <p>You think to yourself "But I have school tomorrow!..."</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}
@@ -96,4 +103,4 @@ class IntroToGameStory extends Component {
 export default IntroToGameStory;
 
 
-// SET UP "TRAINING" OR "GO TO BATTLE" BUTTONS IN THE FINAL IF/ELSE STATEMENT AND COORESPONDING ONCLICK EVENT
+//CREATE MAINGAMEPLAYJUMBOTRON AND DEVELOP RULES FOR GAMEPLAY

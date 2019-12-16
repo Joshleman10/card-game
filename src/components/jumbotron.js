@@ -3,6 +3,7 @@ import { Jumbotron } from 'reactstrap';
 import StartMenu from './startMenu'
 import ViewAllCards from './InfoForCards/ViewAllCards'
 import IntroToGameStory from './gameStories/1stIntro'
+import GamePlayJumbotron from './GamePlay/mainGameplayJumbotron'
 import './css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
@@ -27,10 +28,14 @@ class PrimaryJumbotron extends Component {
             this.state.gameInterface.pop();
             this.setState({ gameInterface: this.state.gameInterface })
         }
+        else if (buttonName === "Start Your Quest"){
+            this.state.gameInterface.unshift(buttonName)
+            this.state.gameInterface.pop();
+            this.setState({ gameInterface: this.state.gameInterface })
+        }
     }
 
     render() {
-
         if (this.state.gameInterface[0] === "View All Cards") {
             return (
                 <Jumbotron fluid className="text-center">
@@ -43,6 +48,13 @@ class PrimaryJumbotron extends Component {
                 <Jumbotron fluid className="text-center">
                     <IntroToGameStory handleButtonClick={this.handler}></IntroToGameStory>
                 </Jumbotron>
+            );
+        }
+        else if (this.state.gameInterface[0] === "Start Your Quest") {
+            return (
+                <GamePlayJumbotron>
+                    
+                </GamePlayJumbotron>
             );
         }
         else {
