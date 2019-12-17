@@ -4,6 +4,7 @@ import StartMenu from './startMenu'
 import ViewAllCards from './InfoForCards/ViewAllCards'
 import IntroToGameStory from './gameStories/1stIntro'
 import GamePlayJumbotron from './GamePlay/mainGameplayJumbotron'
+import PlayersFullDeck from './GamePlay/playersFullDeck'
 import './css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
@@ -24,6 +25,11 @@ class PrimaryJumbotron extends Component {
             this.setState({ gameInterface: this.state.gameInterface })
         }
         else if (buttonName === "New Game") {
+            this.state.gameInterface.unshift(buttonName)
+            this.state.gameInterface.pop();
+            this.setState({ gameInterface: this.state.gameInterface })
+        }
+        else if (buttonName === "View Your Heroes"){
             this.state.gameInterface.unshift(buttonName)
             this.state.gameInterface.pop();
             this.setState({ gameInterface: this.state.gameInterface })
@@ -50,10 +56,15 @@ class PrimaryJumbotron extends Component {
                 </Jumbotron>
             );
         }
+        else if (this.state.gameInterface[0] === "View Your Heroes") {
+            return (
+                <PlayersFullDeck>
+                </PlayersFullDeck>
+            );
+        }
         else if (this.state.gameInterface[0] === "Start Your Quest") {
             return (
                 <GamePlayJumbotron>
-                    
                 </GamePlayJumbotron>
             );
         }
