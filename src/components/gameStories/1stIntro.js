@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import {
     Container, Button
 } from 'reactstrap';
+import PlayersFullDeck from '../GamePlay/playersFullDeck'
+import { allCards } from '../InfoForCards/ViewAllCards'
+
+
+var shuffle = require('shuffle-array');
 
 class IntroToGameStory extends Component {
     state = {
@@ -21,6 +26,24 @@ class IntroToGameStory extends Component {
                 this.state.continueStory.pop()
                 this.state.continueStory.push("Learn To Play", "Start Your Quest")
             }
+        }
+        else if (name === "View Your Heroes") {
+            let creatingNewPlayerDeck = [];
+            let common = shuffle(allCards[0]).filter((item, index)=>{
+               if(index < 6){return item};
+            })
+            let rare = shuffle(allCards[1]).filter((item, index)=>{
+                if(index < 5){return item};
+            })
+             let legendary = shuffle(allCards[2]).filter((item, index)=>{
+                if(index < 3){return item};
+            })
+             let mythical = shuffle(allCards[3]).filter((item, index)=>{
+                if(index < 2){return item};
+            })
+             creatingNewPlayerDeck.push(common,rare,legendary,mythical)
+             let firstEverPlayerDeck = [].concat.apply([], creatingNewPlayerDeck);
+             console.log(firstEverPlayerDeck);
         }
         else if (name === "Start Your Quest") {
             this.props.handleButtonClick(name);
@@ -91,10 +114,17 @@ class IntroToGameStory extends Component {
                 </Container>
             )
         }
+        else if (this.state.slideNumber.length === 6) {
+            return (
+                {}
+            );
+        };
     };
-};
+}
 
 export default IntroToGameStory;
 
-
-//SEND DATA TO PARENT "JUMBOTRON" FOR ONCLICK BUTTON IN "PLAYERSFULLDECK"
+//save the recently created player's starting deck in THIS COMPONENT or in playersfulldeck.js?
+//I BELIEVE THE NEXT STEP WOULD BE TO MOVE THIS (FIRSTEVERPLAYERDECK VARIABLE) & SAVE A VERSION OF IT IN PLAYERSFULLDECK.JS
+//THE THOUGHT PROCESS IS TO KEEP ADDING TO THE DECK AS PLAYER PROGRESSES THROUGH GAME
+// AFTER THAT I NEED TO RENDER THE IMAGE OF EACH CARD AFTER "VIEW YOUR HEROES" ONCLICK EVENT

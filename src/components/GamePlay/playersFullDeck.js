@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button, Jumbotron } from 'reactstrap';
-import ViewAllCards from '../InfoForCards/ViewAllCards'
 
 class PlayersFullDeck extends Component {
 
     state = {
-        cards: this.props
+        playerDeck: []
     };
 
-    handleClick = (e, name) => {
-        console.log("hey")
-        console.log(this.state.cards)
-    }
+
 
     render() {
         return (
@@ -25,3 +21,4 @@ class PlayersFullDeck extends Component {
 };
 
 export default PlayersFullDeck;
+

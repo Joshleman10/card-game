@@ -8,7 +8,7 @@ import exotic from "./Mythical.json";
 import '../css/MainMenu.css';
 
 // const shuffle = require("shuffle-array");
-let allCards = [common, rare, legendary, exotic];
+export let allCards = [common, rare, legendary, exotic];
 let mergedDeckOfAllCards = [].concat.apply([], allCards);
 
 class ViewAllCards extends Component {
