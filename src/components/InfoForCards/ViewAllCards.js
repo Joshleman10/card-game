@@ -7,7 +7,6 @@ import legendary from "./Legendary.json";
 import exotic from "./Mythical.json";
 import '../css/MainMenu.css';
 
-// const shuffle = require("shuffle-array");
 export let allCards = [common, rare, legendary, exotic];
 let mergedDeckOfAllCards = [].concat.apply([], allCards);
 

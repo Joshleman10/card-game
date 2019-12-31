@@ -5,8 +5,9 @@ import {
 import PlayersFullDeck from '../GamePlay/playersFullDeck'
 import { allCards } from '../InfoForCards/ViewAllCards'
 
-
 var shuffle = require('shuffle-array');
+let creatingNewPlayerDeck = [];
+let firstEverPlayerDeck = [].concat.apply([], creatingNewPlayerDeck);
 
 class IntroToGameStory extends Component {
     state = {
@@ -28,22 +29,25 @@ class IntroToGameStory extends Component {
             }
         }
         else if (name === "View Your Heroes") {
-            let creatingNewPlayerDeck = [];
-            let common = shuffle(allCards[0]).filter((item, index)=>{
-               if(index < 6){return item};
+
+            this.state.slideNumber.push(this.state.slideNumber.length + 1)
+            let common = shuffle(allCards[0]).filter((item, index) => {
+                if (index < 6) { return item };
             })
-            let rare = shuffle(allCards[1]).filter((item, index)=>{
-                if(index < 5){return item};
+            let rare = shuffle(allCards[1]).filter((item, index) => {
+                if (index < 5) { return item };
             })
-             let legendary = shuffle(allCards[2]).filter((item, index)=>{
-                if(index < 3){return item};
+            let legendary = shuffle(allCards[2]).filter((item, index) => {
+                if (index < 3) { return item };
             })
-             let mythical = shuffle(allCards[3]).filter((item, index)=>{
-                if(index < 2){return item};
+            let mythical = shuffle(allCards[3]).filter((item, index) => {
+                if (index < 2) { return item };
             })
-             creatingNewPlayerDeck.push(common,rare,legendary,mythical)
-             let firstEverPlayerDeck = [].concat.apply([], creatingNewPlayerDeck);
-             console.log(firstEverPlayerDeck);
+            creatingNewPlayerDeck.push(common, rare, legendary, mythical)
+            console.log(firstEverPlayerDeck);
+            console.log(this.state.slideNumber)
+            console.log(this.state.continueStory);
+            this.setState({ slideNumber: this.state.slideNumber })
         }
         else if (name === "Start Your Quest") {
             this.props.handleButtonClick(name);
@@ -116,7 +120,8 @@ class IntroToGameStory extends Component {
         }
         else if (this.state.slideNumber.length === 6) {
             return (
-                {}
+                    <PlayersFullDeck>
+                    </PlayersFullDeck>
             );
         };
     };
@@ -124,7 +129,7 @@ class IntroToGameStory extends Component {
 
 export default IntroToGameStory;
 
-//save the recently created player's starting deck in THIS COMPONENT or in playersfulldeck.js?
-//I BELIEVE THE NEXT STEP WOULD BE TO MOVE THIS (FIRSTEVERPLAYERDECK VARIABLE) & SAVE A VERSION OF IT IN PLAYERSFULLDECK.JS
-//THE THOUGHT PROCESS IS TO KEEP ADDING TO THE DECK AS PLAYER PROGRESSES THROUGH GAME
+
+//FIGURE OUT WHERE TO CREATE THE PLAYERDECK ARRAY IN ORDER TO BE ABLE TO EXPORT IT TO PLAYERSFULLDECK.JS
 // AFTER THAT I NEED TO RENDER THE IMAGE OF EACH CARD AFTER "VIEW YOUR HEROES" ONCLICK EVENT
+//THE IDEA IS TO KEEP ADDING TO THE DECK AS PLAYER PROGRESSES THROUGH GAME

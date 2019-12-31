@@ -67,5 +67,3 @@ class PrimaryJumbotron extends Component {
 };
 
 export default PrimaryJumbotron;
-
-
