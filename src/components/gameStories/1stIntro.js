@@ -6,8 +6,7 @@ import PlayersFullDeck from '../GamePlay/playersFullDeck'
 import { allCards } from '../InfoForCards/ViewAllCards'
 
 var shuffle = require('shuffle-array');
-let creatingNewPlayerDeck = [];
-let firstEverPlayerDeck = [].concat.apply([], creatingNewPlayerDeck);
+export let creatingNewPlayerDeckArr = [];
 
 class IntroToGameStory extends Component {
     state = {
@@ -43,10 +42,8 @@ class IntroToGameStory extends Component {
             let mythical = shuffle(allCards[3]).filter((item, index) => {
                 if (index < 2) { return item };
             })
-            creatingNewPlayerDeck.push(common, rare, legendary, mythical)
-            console.log(firstEverPlayerDeck);
-            console.log(this.state.slideNumber)
-            console.log(this.state.continueStory);
+            creatingNewPlayerDeckArr.push(common, rare, legendary, mythical)
+            console.log(creatingNewPlayerDeckArr);
             this.setState({ slideNumber: this.state.slideNumber })
         }
         else if (name === "Start Your Quest") {
