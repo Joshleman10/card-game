@@ -29,57 +29,23 @@ class ViewAllCards extends Component {
     render() {
         return (
             <Container >
-                {this.state.backToMenu.map((item, index)=>(
-                <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
+                {this.state.backToMenu.map((item, index) => (
+                    <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                 ))}
-                <h1>COMMON</h1>
+                <h1>HEROES</h1>
                 <Row>
-                    {this.state.common.map((item, index) => (
+                    {this.state.hero.map((item, index) => (
                         <Col sm="3">
                             <BootstrapCard
                                 key={index} onClick={((e) => this.handleClick(e, item))}
                                 id={item.id}
                                 name={item.name}
                                 image={item.image}
-                            />
-                        </Col>
-                    ))}
-                </Row>
-                <h1>RARE</h1>
-                <Row>
-                    {this.state.rare.map((item, index) => (
-                        <Col sm="3">
-                            <BootstrapCard
-                                key={index} onClick={((e) => this.handleClick(e, item))}
-                                id={item.id}
-                                name={item.name}
-                                image={item.image}
-                            />
-                        </Col>
-                    ))}
-                </Row>
-                <h1>LEGENDARY</h1>
-                <Row>
-                    {this.state.legendary.map((item, index) => (
-                        <Col sm="3">
-                            <BootstrapCard
-                                key={index} onClick={((e) => this.handleClick(e, item))}
-                                id={item.id}
-                                name={item.name}
-                                image={item.image}
-                            />
-                        </Col>
-                    ))}
-                </Row>
-                <h1>MYTHICAL</h1>
-                <Row>
-                    {this.state.exotic.map((item, index) => (
-                        <Col sm="3">
-                            <BootstrapCard
-                                key={index} onClick={((e) => this.handleClick(e, item))}
-                                id={item.id}
-                                name={item.name}
-                                image={item.image}
+                                rarity={item.rarity}
+                                attack={item.attack}
+                                defense={item.defense}
+                                ability={item.ability}
+                                cost={item.cost}
                             />
                         </Col>
                     ))}

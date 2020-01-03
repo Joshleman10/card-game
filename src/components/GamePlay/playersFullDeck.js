@@ -38,11 +38,11 @@ class PlayersFullDeck extends Component {
                 </Container>
             )
         }
-        else{
+        else {
             return (
                 <Container>
                     <Row>
-                        <h1>HELLO</h1>
+                        <h1>AN ISSUE OCCURRED RENDERING THIS PAGE</h1>
                     </Row>
                 </Container>
             )

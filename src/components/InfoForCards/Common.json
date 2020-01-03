@@ -5,8 +5,9 @@
       "image": "./CardImages/Common/hoplite.jpg",
       "attack": 1,
       "defense": 2,
-      "ability cost": 1,
-      "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1."
+      "cost": 1,
+      "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1.",
+      "rarity": "Common"
     },
     {
       "id": 2,
@@ -14,8 +15,9 @@
       "image": "./CardImages/Common/sparabara.png",
       "attack": 1,
       "defense": 2,
-      "ability cost": 1,
-      "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random."
+      "cost": 1,
+      "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random.",
+      "rarity": "Common"
     },
     {
       "id": 3,
@@ -23,8 +25,9 @@
       "image": "./CardImages/Common/egyptian.jpg",
       "attack": 1,
       "defense": 1,
-      "ability cost": 1,
-      "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage."
+      "cost": 1,
+      "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage.",
+      "rarity": "Common"
     },
     {
       "id": 4,
@@ -32,8 +35,9 @@
       "image": "./CardImages/Common/sumerian.png",
       "attack": 1,
       "defense": 1,
-      "ability cost": 1,
-      "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'"
+      "cost": 1,
+      "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'",
+      "rarity": "Common"
     },
     {
       "id": 5,
@@ -41,8 +45,9 @@
       "image": "./CardImages/Common/hittite.jpg",
       "attack": 1,
       "defense": 2,
-      "ability cost": 1,
-      "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn."
+      "cost": 1,
+      "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn.",
+      "rarity": "Common"
     },
     {
       "id": 6,
@@ -50,8 +55,9 @@
       "image": "./CardImages/Common/shang_archer.jpg",
       "attack": 1,
       "defense": 1,
-      "ability cost": 1,
-      "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior."
+      "cost": 1,
+      "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior.",
+      "rarity": "Common"
     },
     {
       "id": 7,
@@ -59,8 +65,9 @@
       "image": "./CardImages/Common/ponecian_calvary.jpg",
       "attack": 2,
       "defense": 1,
-      "ability cost": 1,
-      "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn."
+      "cost": 1,
+      "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn.",
+      "rarity": "Common"
     },
     {
       "id": 8,
@@ -68,8 +75,9 @@
       "image": "./CardImages/Common/assyrian.jpg",
       "attack": 1,
       "defense": 1,
-      "ability cost": 1,
-      "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1."
+      "cost": 1,
+      "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1.",
+      "rarity": "Common"
     },
     {
       "id": 9,
@@ -77,8 +85,9 @@
       "image": "./CardImages/Common/mauritanian.jpg",
       "attack": 2,
       "defense": 1,
-      "ability cost": 1,
-      "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1."
+      "cost": 1,
+      "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1.",
+      "rarity": "Common"
     },
     {
       "id": 10,
@@ -86,8 +95,9 @@
       "image": "./CardImages/Common/macedonian.jpg",
       "attack": 2,
       "defense": 2,
-      "ability cost": 1,
-      "ability": "Well Trained: Generate 1 Ability Point."
+      "cost": 1,
+      "ability": "Well Trained: Generate 1 Ability Point.",
+      "rarity": "Common"
     },
     {
       "id": 11,
@@ -95,8 +105,9 @@
       "image": "./CardImages/Common/hunnic.jpg",
       "attack": 1,
       "defense": 2,
-      "ability cost": 1,
-      "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage."
+      "cost": 1,
+      "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage.",
+      "rarity": "Common"
     },
     {
       "id": 12,
@@ -104,7 +115,8 @@
       "image": "./CardImages/Common/roman.jpg",
       "attack": 1,
       "defense": 2,
-      "ability cost": 1,
-      "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it."
+      "cost": 1,
+      "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it.",
+      "rarity": "Common"
     }
   ]

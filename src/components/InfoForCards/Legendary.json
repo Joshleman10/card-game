@@ -6,7 +6,8 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1."
+    "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1.",
+    "rarity": "Legendary"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random."
+    "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random.",
+    "rarity": "Legendary"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
-    "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage."
+    "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage.",
+    "rarity": "Legendary"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
-    "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'"
+    "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'",
+    "rarity": "Legendary"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn."
+    "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn.",
+    "rarity": "Legendary"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
-    "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior."
+    "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior.",
+    "rarity": "Legendary"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "attack": 2,
     "defense": 1,
     "ability cost": 1,
-    "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn."
+    "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn.",
+    "rarity": "Legendary"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "attack": 1,
     "defense": 1,
     "ability cost": 1,
-    "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1."
+    "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1.",
+    "rarity": "Legendary"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "attack": 2,
     "defense": 1,
     "ability cost": 1,
-    "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1."
+    "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1.",
+    "rarity": "Legendary"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "attack": 2,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Well Trained: Generate 1 Ability Point."
+    "ability": "Well Trained: Generate 1 Ability Point.",
+    "rarity": "Legendary"
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage."
+    "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage.",
+    "rarity": "Legendary"
   },
   {
     "id": 12,
@@ -105,6 +116,7 @@
     "attack": 1,
     "defense": 2,
     "ability cost": 1,
-    "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it."
+    "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it.",
+    "rarity": "Legendary"
   }
 ]
