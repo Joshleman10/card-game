@@ -22,3 +22,5 @@ function BootstrapCard(props) {
 };
 
 export default BootstrapCard;
+
+//continue formatting cards
