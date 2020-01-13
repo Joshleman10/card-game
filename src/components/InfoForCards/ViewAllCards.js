@@ -22,7 +22,6 @@ class ViewAllCards extends Component {
 
     handleClick = (e, name) => {
         let buttonName = name;
-        // console.log(buttonName);
         this.props.handleButtonClick(buttonName);
     }
 

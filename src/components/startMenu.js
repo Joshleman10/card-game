@@ -8,7 +8,6 @@ class StartMenu extends Component {
     state = {
         startMenuButtons: ["New Game", "Continue Saved Game", "View All Cards"]
     };
-
     
     handleClick = (e, name) => {
         let buttonName = name;
