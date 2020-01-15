@@ -1,24 +1,24 @@
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
+const express = require("express");
+require("dotenv").config();
+const apiRoutes = require("./routes/api");
+const email = require("./routes/email");
+const mongoose = require("mongoose");
+const db = require("./models");
 
-let currentPlayerDeck = [];
-let userName = "";
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-MongoClient.connect(url, function (err, db) {
-    if (err) throw err;
-    var savedGamesDatabase = db.db("savedGamesDatabase");
-    if (currentPlayerDeck) {
-        savedGamesDatabase.collection("customers").insertOne(currentPlayerDeck, function (err, res) {
-            if (err) throw err;
-            console.log("1 document inserted: " + currentPlayerDeck);
-            db.close();
-        });
-    }
-    else if (currentPlayerDeck) {
-        savedGamesDatabase.collection("customers").insertOne(userName, function (err, res) {
-            if (err) throw err;
-            console.log("1 document inserted: " + userName);
-            db.close();
-        });
-    }
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(apiRoutes);
+app.use(email);
+
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/ageofantiquity",
+    { useNewUrlParser: true }
+  );
+
+app.listen(PORT, () => {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
