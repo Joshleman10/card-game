@@ -4,6 +4,7 @@ import StartMenu from './startMenu'
 import ViewAllCards from './InfoForCards/ViewAllCards'
 import IntroToGameStory from './gameStories/1stIntro'
 import GamePlayJumbotron from './GamePlay/mainGameplayJumbotron'
+import API from '../utils/API'
 import './css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
@@ -26,6 +27,12 @@ class PrimaryJumbotron extends Component {
         else if (buttonName === "New Game") {
             this.state.gameInterface.unshift(buttonName)
             this.state.gameInterface.pop();
+            this.setState({ gameInterface: this.state.gameInterface })
+        }
+        else if (buttonName === "New Game") {
+            
+            // this.state.gameInterface.unshift(buttonName)
+            // this.state.gameInterface.pop();
             this.setState({ gameInterface: this.state.gameInterface })
         }
         else if (buttonName === "Start Your Quest"){

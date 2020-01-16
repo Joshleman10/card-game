@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from 'reactstrap';
 import BootstrapCard from '../InfoForCards/bootstrapCard';
 import { creatingNewPlayerDeckArr } from '../gameStories/1stIntro'
-
+import API from '../../utils/API';
 import '../css/MainMenu.css';
 
 class PlayersFullDeck extends Component {
@@ -12,9 +12,7 @@ class PlayersFullDeck extends Component {
     };
 
     saveInitialPlayerDeck = (initialDeck) => {
-        let startingDeck = {
-            "deck": initialDeck}
-            console.log(startingDeck);
+        API.updatePlayerDeck(initialDeck)
     }
 
     componentDidMount = (e, name) => {
@@ -62,3 +60,6 @@ class PlayersFullDeck extends Component {
 };
 
 export default PlayersFullDeck;
+
+
+//ADD COMPONENTS TO STORE NAME ALONG WITH DECK TO BUILD OUT SAVED GAME DATA...THEN TEST TO SEE IF A GAME/PLAYER IS BEING SAVED
