@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-    Container, Button
+    Container, Button, Input
 } from 'reactstrap';
 import PlayersFullDeck from '../GamePlay/playersFullDeck'
 import { allCards } from '../InfoForCards/ViewAllCards'
@@ -51,12 +51,19 @@ class IntroToGameStory extends Component {
         }
     }
 
+    submitInitialPlayerInfo = () => {
+        const playerName = this.state.playerName
+        const playerDeck = this.state.playerDeck
+        console.log(playerName)
+        console.log(playerDeck);
+    }
+
     render() {
         if (this.state.slideNumber.length === 1) {
             return (
                 <Container>
-                    <p>You come home from school one day to see your father holding back some tears.<br></br>
-                        He looks up and says "It's Grandpa's illness, he's not doing well.  We need to go to the hospital."</p>
+                    <p>You come home from school one day to see your father doing his best to hold back tears.<br></br>
+                        He looks up and says "Grandpa's very sick, we dont know if he will make it.  We need to go to the hospital."</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}
@@ -66,7 +73,7 @@ class IntroToGameStory extends Component {
         else if (this.state.slideNumber.length === 2) {
             return (
                 <Container>
-                    <p>You both walk in to your Granpa's room and the doctor informs you that he could pass any time now.<br></br>
+                    <p>You both walk in to your Grandpa's room and the doctor informs you that he could pass any time now.<br></br>
                         You walk over to him and he struggles to point at a small book lying on the table nearby.<br></br>
                         "I want you to have this book.  It holds more secrets than you know"<br></br>
                         You look at the book called "Age of Antiquity", but, in the same instant, Granpa crashes and doctors rush into the room.<br></br>
@@ -117,8 +124,13 @@ class IntroToGameStory extends Component {
         }
         else if (this.state.slideNumber.length === 6) {
             return (
-                    <PlayersFullDeck>
+                <Container>
+                    <Button onClick={() => this.submitInitialPlayerInfo()} key={1}> Continue To Level 1</Button>
+                    <p>Whats your name anyway kid?</p>
+                    <Input id="playerName" placeholder="Enter Player Name Here"></Input>
+                    <PlayersFullDeck id="playerDeck">
                     </PlayersFullDeck>
+                </Container>
             );
         };
     };
@@ -127,4 +139,5 @@ class IntroToGameStory extends Component {
 export default IntroToGameStory;
 
 
+//GET VALUES FROM BUTTON AND PLAYERDECK TO SAVE TO DB
 //RENDER CARDS AND CARD IMAGES APPROPRIATELY FROM A STYLE AND FUNCTIONALITY STANDPOINT
