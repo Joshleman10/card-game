@@ -51,13 +51,6 @@ class IntroToGameStory extends Component {
         }
     }
 
-    submitInitialPlayerInfo = () => {
-        const playerName = this.state.playerName
-        const playerDeck = this.state.playerDeck
-        console.log(playerName)
-        console.log(playerDeck);
-    }
-
     render() {
         if (this.state.slideNumber.length === 1) {
             return (
@@ -125,9 +118,6 @@ class IntroToGameStory extends Component {
         else if (this.state.slideNumber.length === 6) {
             return (
                 <Container>
-                    <Button onClick={() => this.submitInitialPlayerInfo()} key={1}> Continue To Level 1</Button>
-                    <p>Whats your name anyway kid?</p>
-                    <Input id="playerName" placeholder="Enter Player Name Here"></Input>
                     <PlayersFullDeck id="playerDeck">
                     </PlayersFullDeck>
                 </Container>
