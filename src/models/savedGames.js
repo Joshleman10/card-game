@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const savedGames = new Schema({
+let SavedGames = new Schema({
 
     playernName: {
       type: String,
@@ -16,6 +16,5 @@ const savedGames = new Schema({
     }
 });
 
-const PlayerDeck = mongoose.model("SavedGame", savedGames);
 
-module.exports = PlayerDeck;
+module.exports = mongoose.model("SavedGames", SavedGames);

@@ -1,0 +1,53 @@
+[33mcommit b3b6c29ed984c961f6d2dd409cbddfb3aace27d0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Tue Jan 21 21:58:30 2020 -0500
+
+    ensured file structure stability
+
+[33mcommit 64e2f7b587389c60c10db11429da103ebf223a5e[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Tue Jan 21 21:54:50 2020 -0500
+
+    syntax update
+
+[33mcommit 03adc3ae980c5c16f7532c9690bd9e02b03f07d6[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Sat Nov 23 18:24:34 2019 -0500
+
+    Filled out exotic characters
+
+[33mcommit 6ef9e3ba390121c8d7a223865b3e57a017a863fb[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Wed Nov 20 21:14:13 2019 -0500
+
+    updated legendary and exotic card objects to mirror common
+
+[33mcommit 08d6610aa22d6de78aa2153e15a091f5c913c60c[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Tue Nov 19 22:38:07 2019 -0500
+
+    completed common card images
+
+[33mcommit e674618be952eb1a39778107cd8db64479518b70[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Sun Nov 17 21:33:37 2019 -0500
+
+    began character image search
+
+[33mcommit 88bd571244160ba9e877378444a31c3ae5208855[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Sat Nov 16 17:08:47 2019 -0500
+
+    built out common.json object
+
+[33mcommit fde2c5d6e1e0af482410d9aa22f5d8195f3da2b4[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Mon Nov 11 22:44:21 2019 -0500
+
+    first commit
+
+[33mcommit b6a8ea379a0b78da0e1a109453d97aa5311aa795[m
+Author: Josh Eshleman <eshlemanjosh@gmail.com>
+Date:   Mon Nov 11 21:31:21 2019 -0500
+
+    Initial commit from Create React App

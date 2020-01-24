@@ -1,4 +1,4 @@
-const db = require('../models/savedGames');
+const db = require('../models');
 
 module.exports = {
     
