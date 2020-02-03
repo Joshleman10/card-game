@@ -1,20 +1,25 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 
-let SavedGames = new Schema({
+let savedGame = new mongoose.Schema({
 
-    playernName: {
-      type: String,
-      required: true 
-    },
-    playerDeck: {
-      type: Array,
-      required: true 
-    },
-    gameProgressPoint:{
-      type: Number,
-    }
+  playerName: {
+    type: String
+  },
+  playerDeck: {
+    type: Array
+  },
+  created: {
+    type: Date,
+    default: Date.now
+  },
+  updated: {
+    type: Date,
+    default: Date.now
+  },
+}, {
+  collection: 'users'
 });
 
+const SavedGame = mongoose.model("Task", savedGame);
 
-module.exports = mongoose.model("SavedGames", SavedGames);
+module.exports = SavedGame

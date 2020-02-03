@@ -8,7 +8,7 @@ export default {
         return axios.post("/api/savedGame", gameProgressData);
     },
     deleteSavedGame: function(id) {
-        return axios.delete("/api/savedGame" + id);
+        return axios.delete("/api/savedGame/" + id);
     },
     updateSavedGameFile: function(id) {
         return axios.put("/api/savedGame/" + id);

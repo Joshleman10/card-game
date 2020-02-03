@@ -26,6 +26,7 @@ class PlayersFullDeck extends Component {
         let numOfSaves = 0
         if (numOfSaves === 0) {
             numOfSaves++;
+        }
             console.log(this.state.playerName)
             console.log(numOfSaves)
             console.log(this.state.playerDeck)
@@ -33,11 +34,20 @@ class PlayersFullDeck extends Component {
                 playerName: this.state.playerName,
                 playerDeck: this.state.playerDeck
             }).then(res => {
-                console.log(res);
+                console.log('made it past res')
+                console.log(res)
+                    .then(res => this.loadTasks())
             })
                 .catch(err => console.log(err));
-        }
     }
+
+    loadTasks = () => {
+        API.getSavedGames()
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => console.log(err));
+    };
 
     render() {
         if (this.state.playerDeck[0] !== undefined) {
