@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+var moment = require('moment');
 
 let savedGame = new mongoose.Schema({
 
@@ -9,15 +10,11 @@ let savedGame = new mongoose.Schema({
     type: Array
   },
   created: {
-    type: Date,
-    default: Date.now
-  },
-  updated: {
-    type: Date,
-    default: Date.now
+    type: String,
+    default: moment().format('MMMM Do YYYY, h:mm:ss a')
   },
 }, {
-  collection: 'users'
+  collection: 'SavedGames'
 });
 
 const SavedGame = mongoose.model("Task", savedGame);
