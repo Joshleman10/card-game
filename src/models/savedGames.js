@@ -6,6 +6,9 @@ let savedGame = new mongoose.Schema({
   playerName: {
     type: String
   },
+  currentLevel:{
+    type: Number
+  },
   playerDeck: {
     type: Array
   },

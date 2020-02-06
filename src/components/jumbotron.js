@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import { Jumbotron } from 'reactstrap';
+import { Jumbotron, Button } from 'reactstrap';
 import StartMenu from './startMenu'
 import ViewAllCards from './InfoForCards/ViewAllCards'
 import IntroToGameStory from './gameStories/1stIntro'
 import GamePlayJumbotron from './GamePlay/mainGameplayJumbotron'
+import API from '../utils/API';
 import './css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
 
     state = {
-        gameInterface: ["Start Menu"]
+        gameInterface: ["Start Menu"],
+        savedGames: []
     };
 
     handler = (buttonName) => {
@@ -28,17 +30,22 @@ class PrimaryJumbotron extends Component {
             this.state.gameInterface.pop();
             this.setState({ gameInterface: this.state.gameInterface })
         }
-        else if (buttonName === "New Game") {
-            
-            // this.state.gameInterface.unshift(buttonName)
-            // this.state.gameInterface.pop();
-            this.setState({ gameInterface: this.state.gameInterface })
-        }
-        else if (buttonName === "Start Your Quest"){
+        else if (buttonName === "Continue Saved Game") {
             this.state.gameInterface.unshift(buttonName)
             this.state.gameInterface.pop();
+            API.getSavedGames()
+                .then(res => {
+                    this.state.savedGames.push(res.data[0])
+                    console.log(this.state.savedGames)
+                    this.setState({ savedGames: this.state.savedGames })
+                })
+                .catch(err => console.log(err));
             this.setState({ gameInterface: this.state.gameInterface })
         }
+    }
+
+    savedGameClick = (e, currLevel) => {
+        
     }
 
     render() {
@@ -56,10 +63,13 @@ class PrimaryJumbotron extends Component {
                 </Jumbotron>
             );
         }
-        else if (this.state.gameInterface[0] === "Start Your Quest") {
+        else if (this.state.gameInterface[0] === "Continue Saved Game") {
             return (
-                <GamePlayJumbotron>
-                </GamePlayJumbotron>
+                <Jumbotron fluid className="text-center">
+                    {this.state.savedGames.map((item, index) => (
+                        <Button onClick={((e) => this.savedGameClick(e, item.currentLevel))} name={item.playerName} key={index}>{item.playerName}<br></br>{item.created}</Button>
+                    ))}
+                </Jumbotron>
             );
         }
         else {

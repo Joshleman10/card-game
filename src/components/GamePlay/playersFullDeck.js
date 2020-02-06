@@ -23,16 +23,10 @@ class PlayersFullDeck extends Component {
     }
 
     backToPrevMenu = () => {
-        let numOfSaves = 0
-        if (numOfSaves === 0) {
-            numOfSaves++;
-        }
-        console.log(this.state.playerName)
-        console.log(numOfSaves)
-        console.log(this.state.playerDeck)
         API.createNewSavedGame({
             playerName: this.state.playerName,
-            playerDeck: this.state.playerDeck
+            playerDeck: this.state.playerDeck,
+            currentLevel: 1
         }).then(res => {
             console.log(res)
             this.loadTasks()
@@ -43,7 +37,6 @@ class PlayersFullDeck extends Component {
 loadTasks = () => {
     API.getSavedGames()
         .then(res => {
-            let savedGamesArray = []
             console.log(res.data[0])
         })
         .catch(err => console.log(err));
@@ -88,6 +81,3 @@ render() {
 };
 
 export default PlayersFullDeck;
-
-
-// 
