@@ -1,122 +1,122 @@
 [
   {
     "id": 1,
-    "name": "Immortal",
-    "image": "./CardImages/Rare/immortal.jpg",
+    "name": "Iron Gauntlets",
+    "image": "./CardImages/Common/hoplite.jpg",
     "attack": 1,
-    "defense": 2,
-    "ability cost": 1,
-    "ability": "",
-    "rarity": "Rare"
+    "defense": 1,
+    "cost": 10,
+    "ability": "When attaching these, flip a coin. If heads this armor's attack value is now 2.",
+    "rarity": "Common"
   },
   {
     "id": 2,
-    "name": "Centurion",
-    "image": "./CardImages/Rare/centurion.jpg",
+    "name": "Fitted Boots",
+    "image": "./CardImages/Common/sparabara.png",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "",
-    "rarity": "Rare"
+    "cost": 10,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 3,
-    "name": "Spartan",
-    "image": "./CardImages/Rare/spartan.jpg",
+    "name": "Leather Armor",
+    "image": "./CardImages/Common/egyptian.jpg",
     "attack": 1,
-    "defense": 1,
-    "ability cost": 1,
-    "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage.",
-    "rarity": "Rare"
+    "defense": 3,
+    "cost": 25,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 4,
-    "name": "Medjay",
-    "image": "./CardImages/Rare/medjay.jpg",
+    "name": "Iron Helmet",
+    "image": "./CardImages/Common/sumerian.png",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 5,
-    "name": "Sacred Band of Thebes",
-    "image": "./CardImages/Rare/bandOfThebes.jpg",
+    "name": "Light Spear",
+    "image": "./CardImages/Common/hittite.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 6,
-    "name": "Alexander's Companions",
-    "image": "./CardImages/Rare/companions.jpg",
+    "name": "Bronze Shield",
+    "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 7,
-    "name": "Praetorian Guard",
-    "image": "./CardImages/Rare/praetorian.jpg",
+    "name": "Iron Short Sword",
+    "image": "./CardImages/Common/ponecian_calvary.jpg",
     "attack": 2,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 8,
-    "name": "Shaolin Monk",
-    "image": "./CardImages/Rare/monk.jpg",
+    "name": "Wizard's Spellbook",
+    "image": "./CardImages/Common/assyrian.jpg",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 9,
-    "name": "Harri",
-    "image": "./CardImages/Rare/harii.jpg",
+    "name": "Longbow",
+    "image": "./CardImages/Common/mauritanian.jpg",
     "attack": 2,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 10,
-    "name": "Numidian Cavalry",
-    "image": "./CardImages/Rare/numidianCalvary.jpg",
+    "name": "Staff of Spells",
+    "image": "./CardImages/Common/macedonian.jpg",
     "attack": 2,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Well Trained: Generate 1 Ability Point.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 11,
-    "name": "Chu Ko Nu",
-    "image": "./CardImages/Rare/chuKoNu.png",
+    "name": "War Hammer",
+    "image": "./CardImages/Common/hunnic.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 12,
-    "name": "Cataphract",
-    "image": "./CardImages/Rare/cataphract.jpg",
+    "name": "Heavy Boots",
+    "image": "./CardImages/Common/roman.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it.",
-    "rarity": "Rare"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   }
 ]

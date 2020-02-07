@@ -1,82 +1,122 @@
 [
   {
     "id": 1,
-    "name": "Gilgamesh",
-    "image": "./CardImages/Exotic/gilgamesh.jpg",
+    "name": "God's Gauntlets",
+    "image": "./CardImages/Common/hoplite.jpg",
     "attack": 1,
-    "defense": 2,
-    "ability cost": 1,
-    "ability": "",
-    "rarity": "Mythical"
+    "defense": 1,
+    "cost": 10,
+    "ability": "When attaching these, flip a coin. If heads this armor's attack value is now 2.",
+    "rarity": "Common"
   },
   {
     "id": 2,
-    "name": "Hercules",
-    "image": "./CardImages/Exotic/hercules.jpg",
+    "name": "Feet Wings",
+    "image": "./CardImages/Common/sparabara.png",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random.",
-    "rarity": "Mythical"
+    "cost": 10,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 3,
-    "name": "Ares",
-    "image": "./CardImages/Exotic/ares.jpg",
+    "name": "Maelstrom Chestpiece",
+    "image": "./CardImages/Common/egyptian.jpg",
     "attack": 1,
-    "defense": 1,
-    "ability cost": 1,
-    "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage.",
-    "rarity": "Mythical"
+    "defense": 3,
+    "cost": 25,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 4,
-    "name": "Guan Di",
-    "image": "./CardImages/Exotic/guandi.jpg",
+    "name": "Hellraze Headpiece",
+    "image": "./CardImages/Common/sumerian.png",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'",
-    "rarity": "Mythical"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 5,
-    "name": "Rostam",
-    "image": "./CardImages/Exotic/rostam.jpg",
+    "name": "Spear of Speed",
+    "image": "./CardImages/Common/hittite.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn.",
-    "rarity": "Mythical"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 6,
-    "name": "Montu",
-    "image": "./CardImages/Exotic/montu.jpg",
+    "name": "Roving Garrison",
+    "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior.",
-    "rarity": "Mythical"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 7,
-    "name": "Ishtar",
-    "image": "./CardImages/Exotic/ishtar.jpg",
-    "attack": 1,
+    "name": "Blitz Blade",
+    "image": "./CardImages/Common/ponecian_calvary.jpg",
+    "attack": 2,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1.",
-    "rarity": "Mythical"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 8,
-    "name": "Perseus",
-    "image": "./CardImages/Exotic/perseus.jpeg",
+    "name": "Conjurer's Compendium",
+    "image": "./CardImages/Common/assyrian.jpg",
+    "attack": 1,
+    "defense": 1,
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
+  },
+  {
+    "id": 9,
+    "name": "Huntsman's Recurve",
+    "image": "./CardImages/Common/mauritanian.jpg",
+    "attack": 2,
+    "defense": 1,
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
+  },
+  {
+    "id": 10,
+    "name": "Wishing Wand",
+    "image": "./CardImages/Common/macedonian.jpg",
     "attack": 2,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Well Trained: Generate 1 Ability Point.",
-    "rarity": "Mythical"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
+  },
+  {
+    "id": 11,
+    "name": "Foe Breaker",
+    "image": "./CardImages/Common/hunnic.jpg",
+    "attack": 1,
+    "defense": 2,
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
+  },
+  {
+    "id": 12,
+    "name": "Enemy Evader's",
+    "image": "./CardImages/Common/roman.jpg",
+    "attack": 1,
+    "defense": 2,
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   }
 ]

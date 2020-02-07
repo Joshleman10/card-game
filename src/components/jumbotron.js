@@ -83,3 +83,6 @@ class PrimaryJumbotron extends Component {
 };
 
 export default PrimaryJumbotron;
+
+
+//Restructure json objects to represent armor and weapons

@@ -1,122 +1,122 @@
 [
   {
     "id": 1,
-    "name": "Alexander the Great",
-    "image": "./CardImages/Legendary/AlexanderTheGreat.jpg",
+    "name": "Deathgrip Gloves",
+    "image": "./CardImages/Common/hoplite.jpg",
     "attack": 1,
-    "defense": 2,
-    "ability cost": 1,
-    "ability": "Phalanx: If more than one Greek Soldier is in play, each soldiers defense is raised by 1.",
-    "rarity": "Legendary"
+    "defense": 1,
+    "cost": 10,
+    "ability": "When attaching these, flip a coin. If heads this armor's attack value is now 2.",
+    "rarity": "Common"
   },
   {
     "id": 2,
-    "name": "Julius Cesar",
-    "image": "./CardImages/Legendary/JuliusCaesar.jpg",
+    "name": "Battle Boots",
+    "image": "./CardImages/Common/sparabara.png",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Hold the Line: If the opponent attacks during their turn, roll a die.  If 2 or less, this ability does 1 damage to an opponent at random.",
-    "rarity": "Legendary"
+    "cost": 10,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 3,
-    "name": "Hannibal Barca",
-    "image": "./CardImages/Legendary/Hannibal.jpg",
+    "name": "Full Bronze Body",
+    "image": "./CardImages/Common/egyptian.jpg",
     "attack": 1,
-    "defense": 1,
-    "ability cost": 1,
-    "ability": "Armorless: If your opponent attacks during their turn, you can choose to roll a die.  If the die is 2 or less, and other warriors are in play, mobility allows you to retreat this Egyptian soldier to avoid damage.",
-    "rarity": "Legendary"
+    "defense": 3,
+    "cost": 25,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 4,
-    "name": "Achilles",
-    "image": "./CardImages/Legendary/Achilles.jpg",
+    "name": "Hardened Helm",
+    "image": "./CardImages/Common/sumerian.png",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Transport Reinforcements: If Sumerian Infantry dies, roll a die, if 2 or less, leave the card in play as a 'reinforcement'",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 5,
-    "name": "Hector of Troy",
-    "image": "./CardImages/Legendary/Hector.jpg",
+    "name": "Lance of Legends",
+    "image": "./CardImages/Common/hittite.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Peace Treaty: If your opponent attacks during their turn, roll a die, if 3 or less, the opponent cannot attack Hittite soldier next turn.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 6,
-    "name": "Leonidas",
-    "image": "./CardImages/Legendary/Leonidas.jpg",
+    "name": "Shield of Protections",
+    "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Crossbow: Roll a die, if 3 or less choose any of the opponent's warriors.  Do 1 damage to that warrior.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 7,
-    "name": "Han Xin",
-    "image": "./CardImages/Legendary/HanXin.png",
+    "name": "Steel Short Sword",
+    "image": "./CardImages/Common/ponecian_calvary.jpg",
     "attack": 2,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Height Advantage: This Phonecian Calvary's defense is raised by 1 during your opponent's next turn.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 8,
-    "name": "Xerxes I",
-    "image": "./CardImages/Legendary/Xerxes.jpg",
+    "name": "Spellbook of Secrets",
+    "image": "./CardImages/Common/assyrian.jpg",
     "attack": 1,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Sling Stones: If another on of your warriors attacks, roll a die, if 3 or less the attack is raise by 1.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 9,
-    "name": "Hammurabi",
-    "image": "./CardImages/Legendary/Hammurabi.jpg",
+    "name": "Yew Recurve",
+    "image": "./CardImages/Common/mauritanian.jpg",
     "attack": 2,
     "defense": 1,
-    "ability cost": 1,
-    "ability": "Drawn Longbow: This Mauryan Longbowman's attack increases by 1.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 10,
-    "name": "Ramses II",
-    "image": "./CardImages/Legendary/Ramses.jpg",
+    "name": "Scepter of Destruction",
+    "image": "./CardImages/Common/macedonian.jpg",
     "attack": 2,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Well Trained: Generate 1 Ability Point.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 11,
-    "name": "Ashoka",
-    "image": "./CardImages/Legendary/Ashoka.jpg",
+    "name": "Skull Crusher",
+    "image": "./CardImages/Common/hunnic.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Mail Armor: If your opponent attacks during their turn, roll a die, if 3 or less that attack does 1 less damage.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   },
   {
     "id": 12,
-    "name": "Attila the Hun",
-    "image": "./CardImages/Legendary/AttilaTheHun.jpg",
+    "name": "Foe-Stomp Footwear",
+    "image": "./CardImages/Common/roman.jpg",
     "attack": 1,
     "defense": 2,
-    "ability cost": 1,
-    "ability": "Strategic Attack: If this Early Roman Infantry attacks and kills an opponent, choose another opponent card and deal 1 damage to it.",
-    "rarity": "Legendary"
+    "cost": 1,
+    "ability": "TBD",
+    "rarity": "Common"
   }
 ]

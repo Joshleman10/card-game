@@ -26,9 +26,8 @@ class PlayersFullDeck extends Component {
         API.createNewSavedGame({
             playerName: this.state.playerName,
             playerDeck: this.state.playerDeck,
-            currentLevel: 1
+            currentLevel: "The first warrior"
         }).then(res => {
-            console.log(res)
             this.loadTasks()
     })
                 .catch(err => console.log(err));
