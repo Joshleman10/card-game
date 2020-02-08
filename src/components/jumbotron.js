@@ -45,8 +45,11 @@ class PrimaryJumbotron extends Component {
     }
 
     savedGameClick = (e, currLevel) => {
-        
-    }
+        if (currLevel === "The First Fight") {
+            this.state.gameInterface.unshift(currLevel)
+            this.state.gameInterface.pop();
+            this.setState({ gameInterface: this.state.gameInterface })
+        }    }
 
     render() {
         if (this.state.gameInterface[0] === "View All Cards") {
@@ -66,10 +69,16 @@ class PrimaryJumbotron extends Component {
         else if (this.state.gameInterface[0] === "Continue Saved Game") {
             return (
                 <Jumbotron fluid className="text-center">
+                    <h1>Saved Games</h1>
                     {this.state.savedGames.map((item, index) => (
                         <Button onClick={((e) => this.savedGameClick(e, item.currentLevel))} name={item.playerName} key={index}>{item.playerName}<br></br>{item.created}</Button>
                     ))}
                 </Jumbotron>
+            );
+        }
+        else if (this.state.gameInterface[0] === "The First Fight") {
+            return (
+                <GamePlayJumbotron></GamePlayJumbotron>
             );
         }
         else {

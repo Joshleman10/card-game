@@ -1,17 +1,16 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron } from 'reactstrap';
-import '../css/MainGamePlayJumbotron.css';
+import FirstLevel from './GamePlayDivs/1st_Level'
 
 
 class GamePlayJumbotron extends Component {
 
     state = {
-        opponentReinforcements: [1, 2, 3, 4, 5, 6],
-        playerReinforcements: [1, 2, 3, 4, 5, 6],
-        OMC: [1],
-        PMC: [1],
-        deckOpponent: [1],
-        deckPlayer: [1]
+        oppHelmChestAndHands: ["OppH", "OppC","OppHands"],
+        oppLRAndFeet: ["OppL", "OppR","OppFeet"],
+        oppHandAndDeck: ["OppHand","OppDeck"],
+        userLRAndFeet: ["UserL", "UserR","UserFeet"],
+        userHelmChestAndHands: ["UserH", "UserC","UserHands"],
+        payerHandAndDeck: ["PlayerHand", "PlayerDeck"]
     };
 
     handler = (buttonName) => {
@@ -20,32 +19,11 @@ class GamePlayJumbotron extends Component {
 
     render() {
         return (
-            <Jumbotron>
-                <Container>
-                    <Row>
-                        {this.state.opponentReinforcements.map((item, index) => (
-                            <Col md="2" key={index}>{item}</Col>
-                        ))}
-                    </Row>
-                    <Row>
-                        {this.state.OMC.map((item, index) => (
-                            <Col md={{ size: 6, offset: 5 }} key={index}>{item}</Col>
-                        ))}
-                    </Row>
-                    <Row>
-                        {this.state.PMC.map((item, index) => (
-                            <Col md={{ size: 6, offset: 5 }} key={index}>{item}</Col>
-                        ))}
-                    </Row>
-                    <Row>
-                        {this.state.playerReinforcements.map((item, index) => (
-                            <Col md="2" key={index}>{item}</Col>
-                        ))}
-                    </Row>
-                </Container>
-            </Jumbotron>
+            <FirstLevel></FirstLevel>
         )
     }
 };
 
 export default GamePlayJumbotron;
+
+//Build out the first level
