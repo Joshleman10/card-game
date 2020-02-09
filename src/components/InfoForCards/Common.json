@@ -6,7 +6,7 @@
       "attack": 1,
       "defense": 1,
       "cost": 10,
-      "ability": "When attaching these, flip a coin. If heads this armor's attack value is now 2.",
+      "ability": "When attaching, flip a coin. If heads this armor's attack value is now 2.",
       "rarity": "Common"
     },
     {
@@ -16,7 +16,7 @@
       "attack": 1,
       "defense": 2,
       "cost": 10,
-      "ability": "TBD",
+      "ability": "Increase speed value by 1.",
       "rarity": "Common"
     },
     {
@@ -26,7 +26,7 @@
       "attack": 1,
       "defense": 3,
       "cost": 25,
-      "ability": "TBD",
+      "ability": "Hold 1 extra card in hand.",
       "rarity": "Common"
     },
     {
@@ -34,19 +34,19 @@
       "name": "Rusty Helmet",
       "image": "./CardImages/Common/sumerian.png",
       "attack": 1,
-      "defense": 1,
-      "cost": 1,
-      "ability": "TBD",
+      "defense": 2,
+      "cost": 15,
+      "ability": "Receive 10 extra gold if defeating an opponent wearing this.",
       "rarity": "Common"
     },
     {
       "id": 5,
       "name": "Stone Tip Spear",
       "image": "./CardImages/Common/hittite.jpg",
-      "attack": 1,
+      "attack": 3,
       "defense": 2,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "Increase speed by 2",
       "rarity": "Common"
     },
     {
@@ -56,7 +56,7 @@
       "attack": 1,
       "defense": 1,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "Increase speed by 2.",
       "rarity": "Common"
     },
     {
@@ -66,7 +66,7 @@
       "attack": 2,
       "defense": 1,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "",
       "rarity": "Common"
     },
     {

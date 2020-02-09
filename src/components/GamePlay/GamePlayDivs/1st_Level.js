@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron } from 'reactstrap';
+import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
 import '../../css/MainGamePlayJumbotron.css';
+import { allCards } from '../../InfoForCards/ViewAllCards'
 
+console.log(allCards);
 
 class GamePlayJumbotron extends Component {
 
@@ -13,6 +15,10 @@ class GamePlayJumbotron extends Component {
         userHelmChestAndHands: ["UserH", "UserC","UserHands"],
         payerHandAndDeck: ["PlayerHand", "PlayerDeck"]
     };
+
+    attackEnemy = (e, name) => {
+
+    }
 
     handler = (buttonName) => {
 
@@ -51,6 +57,9 @@ class GamePlayJumbotron extends Component {
                             <Col md={{ size: 6 }} key={index}style={{border: 'solid'}}>{item}</Col>
                         ))}
                     </Row>
+                    <Button onClick={() => this.attackEnemy()} key={1}>Attack Button</Button>
+                    <Button onClick={() => this.check()} key={2}>TBD</Button>
+
                 </Container>
             </Jumbotron>
         )
@@ -58,3 +67,6 @@ class GamePlayJumbotron extends Component {
 };
 
 export default GamePlayJumbotron;
+
+
+//ADJUST OBJECTS FOR EASIER USABILITY
