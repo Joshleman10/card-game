@@ -2,61 +2,61 @@
     {
       "id": 1,
       "name": "Common Gauntlets",
-      "image": "./CardImages/Common/hoplite.jpg",
+      "image": "./CardImages/Common/comGauntlets.png",
       "attack": 1,
       "defense": 1,
       "cost": 10,
-      "ability": "When attaching, flip a coin. If heads this armor's attack value is now 2.",
+      "ability": "When attaching, roll a die. If more than 3, add 1 to this armor's attack value",
       "rarity": "Common"
     },
     {
       "id": 2,
       "name": "Leather Boots",
-      "image": "./CardImages/Common/sparabara.png",
+      "image": "./CardImages/Common/comLeatherBoots.png",
       "attack": 1,
       "defense": 2,
       "cost": 10,
-      "ability": "Increase speed value by 1.",
+      "ability": "Increase attack speed by 1 when wearing these",
       "rarity": "Common"
     },
     {
       "id": 3,
       "name": "Normal Coat",
-      "image": "./CardImages/Common/egyptian.jpg",
+      "image": "./CardImages/Common/comNormalCoat.png",
       "attack": 1,
       "defense": 3,
       "cost": 25,
-      "ability": "Hold 1 extra card in hand.",
+      "ability": "Hold 1 extra card in hand",
       "rarity": "Common"
     },
     {
       "id": 4,
       "name": "Rusty Helmet",
-      "image": "./CardImages/Common/sumerian.png",
+      "image": "./CardImages/Common/comRustyHelm.png",
       "attack": 1,
       "defense": 2,
       "cost": 15,
-      "ability": "Receive 10 extra gold if defeating an opponent wearing this.",
+      "ability": "Increase your overall attack by 2 each turn",
       "rarity": "Common"
     },
     {
       "id": 5,
       "name": "Stone Tip Spear",
-      "image": "./CardImages/Common/hittite.jpg",
-      "attack": 3,
-      "defense": 2,
-      "cost": 1,
-      "ability": "Increase speed by 2",
+      "image": "./CardImages/Common/comStoneTipSpear.png",
+      "attack": 2,
+      "defense": 1,
+      "cost": 7,
+      "ability": "Increase attack speed by 2 when holding this",
       "rarity": "Common"
     },
     {
       "id": 6,
       "name": "Wicker Shield",
       "image": "./CardImages/Common/shang_archer.jpg",
-      "attack": 1,
-      "defense": 1,
-      "cost": 1,
-      "ability": "Increase speed by 2.",
+      "attack": 0,
+      "defense": 3,
+      "cost": 5,
+      "ability": "Increase attack speed by 2 when holding this",
       "rarity": "Common"
     },
     {
@@ -66,27 +66,27 @@
       "attack": 2,
       "defense": 1,
       "cost": 1,
-      "ability": "",
+      "ability": "When attaching roll a die, if more than 3, add 1 to this weapon's attack value",
       "rarity": "Common"
     },
     {
       "id": 8,
       "name": "Common Spellbook",
       "image": "./CardImages/Common/assyrian.jpg",
-      "attack": 1,
-      "defense": 1,
-      "cost": 1,
-      "ability": "TBD",
+      "attack": 0,
+      "defense": 0,
+      "cost": 15,
+      "ability": "Once each turn, you may heal your warrior 5 HP.",
       "rarity": "Common"
     },
     {
       "id": 9,
       "name": "Standard Bow",
       "image": "./CardImages/Common/mauritanian.jpg",
-      "attack": 2,
-      "defense": 1,
+      "attack": 3,
+      "defense": 0,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "Each turn roll a die.  If more than 4, this ability does 1 damage to the enemy.",
       "rarity": "Common"
     },
     {
@@ -96,7 +96,7 @@
       "attack": 2,
       "defense": 2,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "After an attack with this staff is complete, reduce the enemy's total defense by 2.",
       "rarity": "Common"
     },
     {
@@ -106,7 +106,7 @@
       "attack": 1,
       "defense": 2,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "If enemy is using a shield, reduce sheild defense by 5",
       "rarity": "Common"
     },
     {
@@ -116,7 +116,17 @@
       "attack": 1,
       "defense": 2,
       "cost": 1,
-      "ability": "TBD",
+      "ability": "When an enemy attacks, roll a die. If 6 evade the incoming attack.",
+      "rarity": "Common"
+    },
+    {
+      "id": 13,
+      "name": "Sorcerer's Robes",
+      "image": "./CardImages/Common/roman.jpg",
+      "attack": 1,
+      "defense": 1,
+      "cost": 1,
+      "ability": "Receive an extra 50 gold if an opponent is defeated while wearing these.",
       "rarity": "Common"
     }
   ]

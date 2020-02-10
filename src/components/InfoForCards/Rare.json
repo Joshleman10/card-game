@@ -3,10 +3,10 @@
     "id": 1,
     "name": "Iron Gauntlets",
     "image": "./CardImages/Common/hoplite.jpg",
-    "attack": 1,
-    "defense": 1,
-    "cost": 10,
-    "ability": "When attaching these, flip a coin. If heads this armor's attack value is now 2.",
+    "attack": 3,
+    "defense": 3,
+    "cost": 15,
+    "ability": "When attaching, roll a die. If more than 3, increase defense value by 5.",
     "rarity": "Common"
   },
   {
@@ -16,7 +16,7 @@
     "attack": 1,
     "defense": 2,
     "cost": 10,
-    "ability": "TBD",
+    "ability": "Increase overall attack speed by 4 when wearing these.",
     "rarity": "Common"
   },
   {
@@ -26,7 +26,7 @@
     "attack": 1,
     "defense": 3,
     "cost": 25,
-    "ability": "TBD",
+    "ability": "If the enemy attacks with a sword of any kind, that attack does 3 less.",
     "rarity": "Common"
   },
   {
@@ -36,7 +36,7 @@
     "attack": 1,
     "defense": 1,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "Increase your overall defense by 3 each turn.",
     "rarity": "Common"
   },
   {
@@ -46,7 +46,7 @@
     "attack": 1,
     "defense": 2,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "Increase attack speed by 5",
     "rarity": "Common"
   },
   {
@@ -54,9 +54,9 @@
     "name": "Bronze Shield",
     "image": "./CardImages/Common/shang_archer.jpg",
     "attack": 1,
-    "defense": 1,
+    "defense": 5,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "Defend 3 damage against bow abilities",
     "rarity": "Common"
   },
   {
@@ -66,27 +66,27 @@
     "attack": 2,
     "defense": 1,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "When attaching roll a die, if more than 3, add 3 to this weapon's attack value",
     "rarity": "Common"
   },
   {
     "id": 8,
     "name": "Wizard's Spellbook",
     "image": "./CardImages/Common/assyrian.jpg",
-    "attack": 1,
-    "defense": 1,
+    "attack": 0,
+    "defense": 0,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "Reduce the enemy's speed by 1. This effect reduces enemy speed by 1 more each time it is used.",
     "rarity": "Common"
   },
   {
     "id": 9,
     "name": "Longbow",
     "image": "./CardImages/Common/mauritanian.jpg",
-    "attack": 2,
-    "defense": 1,
+    "attack": 5,
+    "defense": 0,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "Each turn roll a die.  If more than 4, this ability does 5 damage to the enemy.",
     "rarity": "Common"
   },
   {
@@ -96,7 +96,7 @@
     "attack": 2,
     "defense": 2,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "After an attack with this staff is complete, reduce the enemy's total defense by 5.",
     "rarity": "Common"
   },
   {
@@ -106,7 +106,7 @@
     "attack": 1,
     "defense": 2,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "If enemy is using a shield, reduce that sheild's defense by 5",
     "rarity": "Common"
   },
   {
@@ -116,7 +116,17 @@
     "attack": 1,
     "defense": 2,
     "cost": 1,
-    "ability": "TBD",
+    "ability": "If using a sheild, increase defense by 8.",
+    "rarity": "Common"
+  },
+  {
+    "id": 13,
+    "name": "Robes of Mystery",
+    "image": "./CardImages/Common/roman.jpg",
+    "attack": 2,
+    "defense": 5,
+    "cost": 1,
+    "ability": "Receive an extra 75 gold if an opponent is defeated while wearing these.",
     "rarity": "Common"
   }
 ]

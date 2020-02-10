@@ -15,15 +15,12 @@ function BootstrapCard(props) {
                 {props.name + '  ' + props.rarity}
             </CardTitle>
             <img style={{ width: '100%', height: '7vw', objectFit: 'cover' }} className="cardImage" src={process.env.PUBLIC_URL + props.image} alt={props.name} />
-            <CardBody style={{ marginLeft: '-15%', width: '130%', height: '15vw' }}>
+            <CardBody style={{ marginLeft: '-10%', width: '120%', height: '15vw' }}>
                 <CardText style={{ fontSize: '10px' }} className="cardText">{props.ability}</CardText>
-                <Button onClick={handleClick} style={{ width: '40%', marginTop: "-15px", height: '20px', fontSize: '10px' }}>ABI</Button>
-                <Button onClick={handleClick} style={{ width: '40%', marginTop: "-15px", marginLeft: '5px', height: '20px', fontSize: '10px' }}>{"ATT:" + props.attack}</Button>
+                <Button onClick={handleClick} style={{ width: '75%', marginTop: "-15px", height: '20px', fontSize: '10px' }}>USE ABILITY</Button>
             </CardBody>
         </Card>
     );
 };
 
 export default BootstrapCard;
-
-//SET UP DATABASE AND FIGURE OUT HOW TO GET PLAYERFULLDECK AND USERNAME OBJECT SAVED TO A MONGODB DATABASE
