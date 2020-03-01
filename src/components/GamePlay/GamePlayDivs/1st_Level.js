@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
-import '../../css/MainGamePlayJumbotron.css';
+import '../../artAndStyles/css/MainGamePlayJumbotron.css';
 import { allCards } from '../../InfoForCards/ViewAllCards'
-
-console.log(allCards);
 
 class GamePlayJumbotron extends Component {
 

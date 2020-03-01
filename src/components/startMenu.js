@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
     Container, Button
 } from 'reactstrap';
-import './css/startMenu.css'
+import './artAndStyles/css/startMenu.css'
 
 class StartMenu extends Component {
     state = {

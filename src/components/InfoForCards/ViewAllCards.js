@@ -5,7 +5,7 @@ import common from "./Common.json";
 import rare from "./Rare.json";
 import legendary from "./Legendary.json";
 import exotic from "./Mythical.json";
-import '../css/MainMenu.css';
+import '../artAndStyles/css/MainMenu.css';
 
 export let allCards = [common, rare, legendary, exotic];
 let mergedDeckOfAllCards = [].concat.apply([], allCards);
@@ -31,7 +31,7 @@ class ViewAllCards extends Component {
                 {this.state.backToMenu.map((item, index) => (
                     <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                 ))}
-                <h1>HEROES</h1>
+                <h1>Articles of Battle</h1>
                 <Row>
                     {this.state.hero.map((item, index) => (
                         <Col sm="3">

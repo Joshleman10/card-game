@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import StartMenu from './startMenu'
 import ViewAllCards from './InfoForCards/ViewAllCards'
 import IntroToGameStory from './gameStories/1stIntro'
-import GamePlayJumbotron from './GamePlay/mainGameplayJumbotron'
-import API from '../utils/API';
-import './css/startMenu.css'
+import SavedGames from './savedGames/savedGames'
+import './artAndStyles/css/startMenu.css'
 
 class PrimaryJumbotron extends Component {
 
     state = {
-        gameInterface: ["Start Menu"],
-        savedGames: []
+        gameInterface: ["Start Menu"]
     };
 
     handler = (buttonName) => {
@@ -33,23 +31,9 @@ class PrimaryJumbotron extends Component {
         else if (buttonName === "Continue Saved Game") {
             this.state.gameInterface.unshift(buttonName)
             this.state.gameInterface.pop();
-            API.getSavedGames()
-                .then(res => {
-                    this.state.savedGames.push(res.data[0])
-                    console.log(this.state.savedGames)
-                    this.setState({ savedGames: this.state.savedGames })
-                })
-                .catch(err => console.log(err));
             this.setState({ gameInterface: this.state.gameInterface })
         }
     }
-
-    savedGameClick = (e, currLevel) => {
-        if (currLevel === "The First Fight") {
-            this.state.gameInterface.unshift(currLevel)
-            this.state.gameInterface.pop();
-            this.setState({ gameInterface: this.state.gameInterface })
-        }    }
 
     render() {
         if (this.state.gameInterface[0] === "View All Cards") {
@@ -69,16 +53,8 @@ class PrimaryJumbotron extends Component {
         else if (this.state.gameInterface[0] === "Continue Saved Game") {
             return (
                 <Jumbotron fluid className="text-center">
-                    <h1>Saved Games</h1>
-                    {this.state.savedGames.map((item, index) => (
-                        <Button onClick={((e) => this.savedGameClick(e, item.currentLevel))} name={item.playerName} key={index}>{item.playerName}<br></br>{item.created}</Button>
-                    ))}
+                    <SavedGames handleButtonClick={this.handler}></SavedGames>
                 </Jumbotron>
-            );
-        }
-        else if (this.state.gameInterface[0] === "The First Fight") {
-            return (
-                <GamePlayJumbotron></GamePlayJumbotron>
             );
         }
         else {
@@ -92,6 +68,3 @@ class PrimaryJumbotron extends Component {
 };
 
 export default PrimaryJumbotron;
-
-
-//Restructure json objects to represent armor and weapons

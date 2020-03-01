@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Input } from 'reactstrap';
 import BootstrapCard from '../InfoForCards/bootstrapCard';
 import { creatingNewPlayerDeckArr } from '../gameStories/1stIntro'
 import API from '../../utils/API';
-import '../css/MainMenu.css';
+import '../artAndStyles/css/MainMenu.css';
 
 class PlayersFullDeck extends Component {
 
