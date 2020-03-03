@@ -20,6 +20,9 @@ class SavedGames extends Component {
         gameInterface: []
     };
 
+    //********need to figure out how to get this.state.listOfSaves to be represented by state, but also be ready to render
+    //on component mounting********
+    
     componentWillMount = (e, name) => {
         this.state.listOfSaves.push(savedGames)
         this.setState({ listOfSaves: this.state.listOfSaves })
@@ -37,6 +40,11 @@ class SavedGames extends Component {
             this.setState({ gameInterface: this.state.gameInterface })
         }
     }
+    deleteSave = (e, gameToDel) => {
+        console.log(gameToDel._id);
+        API.deleteSavedGame(gameToDel._id)
+    }
+
 
     render() {
         if (this.state.gameInterface[0] === "The First Fight")
@@ -51,7 +59,10 @@ class SavedGames extends Component {
                     ))}
                     <h1>Saved Games</h1>
                     {this.state.listOfSaves[0].map((item, index) => (
+                        <Container>
                         <Button onClick={((e) => this.savedGameClick(e, item.currentLevel))} name={item.created} key={index}>{item.playerName}<br></br>{item.created}</Button>
+                        <Button onClick={((e) => this.deleteSave(e, item))}>Delete This Game</Button>
+                        </Container>
                     ))}
                 </Container>
             );
