@@ -9,7 +9,7 @@ import './artAndStyles/css/startMenu.css'
 class PrimaryJumbotron extends Component {
 
     state = {
-        gameInterface: ["Start Menu"]
+        gameInterface: ["Start Menu"],
     };
 
     handler = (buttonName) => {
