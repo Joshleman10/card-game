@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-    Container, Button, Input
+    Container, Button
 } from 'reactstrap';
 import PlayersFullDeck from '../GamePlay/playersFullDeck'
 import { allCards } from '../InfoForCards/ViewAllCards'
@@ -43,7 +43,6 @@ class IntroToGameStory extends Component {
                 if (index < 2) { return item };
             })
             creatingNewPlayerDeckArr.push(common, rare, legendary, mythical)
-            console.log(creatingNewPlayerDeckArr);
             this.setState({ slideNumber: this.state.slideNumber })
         }
         else if (name === "Start Your Quest") {
@@ -55,8 +54,8 @@ class IntroToGameStory extends Component {
         if (this.state.slideNumber.length === 1) {
             return (
                 <Container>
-                    <p>You come home from school one day to see your father doing his best to hold back tears.<br></br>
-                        He looks up and says "Grandpa's very sick, we dont know if he will make it.  We need to go to the hospital."</p>
+                    <p>Story Stuff<br></br>
+                        Story Stuff</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}
@@ -66,11 +65,8 @@ class IntroToGameStory extends Component {
         else if (this.state.slideNumber.length === 2) {
             return (
                 <Container>
-                    <p>You both walk in to your Grandpa's room and the doctor informs you that he could pass any time now.<br></br>
-                        You walk over to him and he struggles to point at a small book lying on the table nearby.<br></br>
-                        "I want you to have this book.  It holds more secrets than you know"<br></br>
-                        You look at the book called "Age of Antiquity", but, in the same instant, Granpa crashes and doctors rush into the room.<br></br>
-                        It all happens so fast but before you know it, Granpa is gone.</p>
+                    <p>Story Stuff<br></br>
+                        Story Stuff</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}
@@ -80,10 +76,8 @@ class IntroToGameStory extends Component {
         else if (this.state.slideNumber.length === 3) {
             return (
                 <Container>
-                    <p>A few days and much mourning passes.  As you and your Dad are cleaning out Granpa's attic, you notice a small but very old chest.<br></br>
-                        You show your Dad, but the chest is locked so you both decide to take it home until a key can be found.<br></br>
-                        For weeks no key turns up, but late one night while lying in bed you are reading the book that was left for you. <br></br>
-                        Getting towards the end, you turn a page and there is a small key taped to the page.</p>
+                    <p>Story Stuff<br></br>
+                        Story Stuff</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}
@@ -93,11 +87,8 @@ class IntroToGameStory extends Component {
         else if (this.state.slideNumber.length === 4) {
             return (
                 <Container>
-                    <p>You get the chest and rush it back to your room.  Placing the key in the locked chest it immediately opens.<br></br>
-                        You find inside 10 very old cards, as well as an ancient map with kingdoms and empires of old, and places for cards on either end.<br></br>
-                        You notice a space with a picture of what looks like cards stacked on top of each other, so you stack the cards up and place them there.<br></br>
-                        As you place the cards onto the map, a blinding light comes out of the map.  You open your eyese to find yourself standing at an old table.<br></br>
-                        Across the table from you is a large grizzled man, that says "Welcome to the Age of Antiquity".</p>
+                    <p>Story Stuff<br></br>
+                        Story Stuff</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}
@@ -107,8 +98,8 @@ class IntroToGameStory extends Component {
         else if (this.state.slideNumber.length === 5) {
             return (
                 <Container>
-                    <p>"The glory of the ancient ones lives on in these cards." he continues, "You must use the Fabled Cards to defeat all opponents".<br></br>
-                        "Then and only then may you return home".  The cards you found in the box are still in your hands, so you anylize them more closely...</p>
+                    <p>Story Stuff<br></br>
+                        Story Stuff</p>
                     {this.state.continueStory.map((item, index) => (
                         <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
                     ))}

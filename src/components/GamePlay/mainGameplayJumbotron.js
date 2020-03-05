@@ -14,7 +14,7 @@ class GamePlayJumbotron extends Component {
     };
 
     handler = (buttonName) => {
-
+        
     }
 
     render() {
