@@ -5,8 +5,6 @@ import { creatingNewPlayerDeckArr } from '../gameStories/1stIntro'
 import API from '../../utils/API';
 import '../artAndStyles/css/MainMenu.css';
 
-/***need to get data from SAVEDGAMES.JS into 1st level.js so that representation of player object is accurate */
-
 class PlayersFullDeck extends Component {
 
     state = {

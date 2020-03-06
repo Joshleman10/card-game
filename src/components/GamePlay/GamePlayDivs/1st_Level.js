@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button } from 'reactstrap';
 import '../../artAndStyles/css/MainGamePlayJumbotron.css';
 import { allCards } from '../../InfoForCards/ViewAllCards'
-import API from '../../../utils/API';
 
+
+/***need to get data from SAVEDGAMES.JS into 1st level.js so that representation of player object is accurate */
+//Use API.getSavedGames
 class GamePlayJumbotron extends Component {
 
     state = {
