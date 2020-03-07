@@ -2,7 +2,7 @@ import React from "react";
 import {
     Card, CardText, CardBody, Button, CardTitle
 } from 'reactstrap';
-// import "../css/bootstrapCard.css"
+// import "../artAndStyles/css/bootstrapCard.css"
 
 function handleClick(e, name) {
     console.log(this.children)
@@ -10,7 +10,7 @@ function handleClick(e, name) {
 
 function BootstrapCard(props) {
     return (
-        <Card style={{ borderStyle: 'solid', borderWidth: '5px', borderColor: 'black', margin: '5px', maxHeight: '250px' }}>
+        <Card className='bootStrapCard' style={{ transform: `${this.state.hovered ? 'scale(1.5,1.5)' : null}`, borderStyle: 'solid', borderWidth: '5px', borderColor: 'black', margin: '5px', maxHeight: '250px' }}>
             <CardTitle style={{ fontSize: '10px', width: '130%', marginLeft: '-15%' }}>
                 {props.name + '  ' + props.rarity}
             </CardTitle>

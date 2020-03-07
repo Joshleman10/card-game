@@ -1,26 +1,48 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button, Media } from 'reactstrap';
+import { Container, Row, Col, Button, Card } from 'reactstrap';
 // import { allCards } from '../../InfoForCards/ViewAllCards'
+import '../../artAndStyles/css/MainGamePlayJumbotron.css'
+
+let deckSymbol = <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} onClick={() => this.dealCards(true)} src={process.env.PUBLIC_URL + 'battleImages/deck.jpg'} alt='playing card img' />
+let handPlaceHolder = <Card style={{ width: '100%', height: '100%', objectFit: 'cover' }} onMouseEnter={(e, item, index) => this.onHover(true)} onMouseLeave={(e, item, index) => this.onHover(false)}>EMPTY</Card>
 
 class GamePlayJumbotron extends Component {
 
     state = {
+        entirePlayerDeck: [],
         oppHelmChestAndHands: ["OppH", "OppC", "OppHands"],
         oppLRAndFeet: ["OppL", "OppR", "OppFeet"],
         oppHandAndDeck: ["OppHand", "OppDeck"],
         userLRAndFeet: ["UserL", "UserR", "UserFeet"],
         userHelmChestAndHands: ["UserH", "UserC", "UserHands"],
-        payerHandAndDeck: ["PlayerHand", "PlayerDeck"],
+        playerHandAndDeck: [[handPlaceHolder], [handPlaceHolder], [handPlaceHolder], [handPlaceHolder], [handPlaceHolder], deckSymbol],
         actionButtons: ["Attack", "Use Ability"]
     };
 
     componentDidMount = (e, name) => {
-        console.log(this.props.value.props[0])
-    }
-    attackEnemy = (e, name) => {
+        this.props.value.props[0].playerDeck.map(item => {
+            this.state.entirePlayerDeck.push(item);
+        })
+        console.log(this.state.entirePlayerDeck)
     }
 
-    handler = (buttonName) => {
+    onHover = (e, card, index) => {
+    }
+
+    dealCards = (ableToDeal) => {
+        if (ableToDeal === true) {
+            let top5 = this.state.entirePlayerDeck.filter((item, index) => { if (index < 5) return item })
+            this.state.playerHandAndDeck.map((item, index) => {
+                if (index < 5) {
+                    item.pop().push(top5.filter((thing, num) => { if (num === index) return thing }))
+                }
+            })
+            this.setState({ playerHandAndDeck: this.state.playerHandAndDeck });
+        }
+    }
+
+
+    attackEnemy = (e, name) => {
 
     }
 
@@ -53,9 +75,11 @@ class GamePlayJumbotron extends Component {
                     ))}
                 </Row>
                 <Row>
-                        <Col md={{ size: 12 }} style={{ border: 'solid' }}>
-                            <Media object data-src='../../artAndStyles/Art/deck.jpg' alt='card deck pic'></Media>
+                    {this.state.playerHandAndDeck.map((item, index) => (
+                        <Col md={{ size: 2 }} style={{ border: 'solid' }}>
+                            {index === 5 ? deckSymbol : item[0]}
                         </Col>
+                    ))}
                 </Row>
                 <Row>
                     {this.state.actionButtons.map((item, index) => (
@@ -71,6 +95,3 @@ class GamePlayJumbotron extends Component {
 };
 
 export default GamePlayJumbotron;
-
-
-//ADJUST OBJECTS FOR EASIER USABILITY
