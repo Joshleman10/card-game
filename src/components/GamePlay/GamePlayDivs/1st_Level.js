@@ -1,11 +1,7 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from 'reactstrap';
-import '../../artAndStyles/css/MainGamePlayJumbotron.css';
-import { allCards } from '../../InfoForCards/ViewAllCards'
+import { Container, Row, Col, Button, Media } from 'reactstrap';
+// import { allCards } from '../../InfoForCards/ViewAllCards'
 
-
-/***need to get data from SAVEDGAMES.JS into 1st level.js so that representation of player object is accurate */
-//Use API.getSavedGames
 class GamePlayJumbotron extends Component {
 
     state = {
@@ -19,7 +15,7 @@ class GamePlayJumbotron extends Component {
     };
 
     componentDidMount = (e, name) => {
-        console.log(this.props)
+        console.log(this.props.value.props[0])
     }
     attackEnemy = (e, name) => {
     }
@@ -57,9 +53,9 @@ class GamePlayJumbotron extends Component {
                     ))}
                 </Row>
                 <Row>
-                    {this.state.payerHandAndDeck.map((item, index) => (
-                        <Col md={{ size: 6 }} key={index} style={{ border: 'solid' }}>{item}</Col>
-                    ))}
+                        <Col md={{ size: 12 }} style={{ border: 'solid' }}>
+                            <Media object data-src='../../artAndStyles/Art/deck.jpg' alt='card deck pic'></Media>
+                        </Col>
                 </Row>
                 <Row>
                     {this.state.actionButtons.map((item, index) => (

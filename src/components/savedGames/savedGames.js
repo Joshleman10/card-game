@@ -17,7 +17,8 @@ class SavedGames extends Component {
     state = {
         backToMenu: ["Back To Main Menu"],
         listOfSaves: [],
-        gameInterface: []
+        gameInterface: [],
+        gameSelected: []
     };
 
     componentWillMount = (e, name) => {
@@ -29,8 +30,9 @@ class SavedGames extends Component {
         this.props.handleButtonClick(name);
     }
 
-    savedGameClick = (e, currLevel) => {
+    savedGameClick = (e, currLevel, savedGame) => {
         if (currLevel === "The First Fight") {
+            this.state.gameSelected.push(savedGame)
             this.state.gameInterface.push(currLevel);
             this.setState({ gameInterface: this.state.gameInterface })
         }
@@ -45,18 +47,18 @@ class SavedGames extends Component {
     render() {
         if (this.state.gameInterface[0] === "The First Fight")
             return (
-                <GamePlayJumbotron></GamePlayJumbotron>
+                <GamePlayJumbotron props={this.state.gameSelected}></GamePlayJumbotron>
             );
         else if (this.state.listOfSaves.length > 0) {
             return (
                 <Container>
                     {this.state.backToMenu.map((item, index) => (
-                        <Button onClick={((e) => this.handleClick(e, item))} name={item} key={index}>{item}</Button>
+                        <Button onClick={((e) => this.handleClick(e, item))} src={this.props} name={item} key={index}>{item}</Button>
                     ))}
                     <h1>Saved Games</h1>
                     {this.state.listOfSaves.map((item, index) => (
                         <Container>
-                            <Button onClick={((e) => this.savedGameClick(e, item.currentLevel))} name={item.created} key={index}>{item.playerName}<br></br>{item.created}</Button>
+                            <Button onClick={((e) => this.savedGameClick(e, item.currentLevel, item))} name={item.created} key={index}>{item.playerName}<br></br>{item.created}</Button>
                             <Button onClick={((e) => this.deleteSave(e, item, index))}>Delete This Game</Button>
                         </Container>
                     ))}
