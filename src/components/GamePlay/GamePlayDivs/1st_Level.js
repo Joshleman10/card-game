@@ -3,8 +3,8 @@ import { Container, Row, Col, Button, Card } from 'reactstrap';
 // import { allCards } from '../../InfoForCards/ViewAllCards'
 import '../../artAndStyles/css/MainGamePlayJumbotron.css'
 
-let deckSymbol = <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} onClick={() => this.dealCards(true)} src={process.env.PUBLIC_URL + 'battleImages/deck.jpg'} alt='playing card img' />
-let handPlaceHolder = <Card style={{ width: '100%', height: '100%', objectFit: 'cover' }} onMouseEnter={(e, item, index) => this.onHover(true)} onMouseLeave={(e, item, index) => this.onHover(false)}>EMPTY</Card>
+// let deckSymbol = <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} onClick={() => this.dealCards(true)} src={process.env.PUBLIC_URL + 'battleImages/deck.jpg'} alt='playing card img'/>
+// let handPlaceHolder = <Card style={{ width: '100%', height: '100%', objectFit: 'cover' }} onMouseEnter={(e, item, index) => this.onHover(true)} onMouseLeave={(e, item, index) => this.onHover(false)}>EMPTY</Card>
 
 class GamePlayJumbotron extends Component {
 
@@ -15,7 +15,7 @@ class GamePlayJumbotron extends Component {
         oppHandAndDeck: ["OppHand", "OppDeck"],
         userLRAndFeet: ["UserL", "UserR", "UserFeet"],
         userHelmChestAndHands: ["UserH", "UserC", "UserHands"],
-        playerHandAndDeck: [[handPlaceHolder], [handPlaceHolder], [handPlaceHolder], [handPlaceHolder], [handPlaceHolder], deckSymbol],
+        playerHandAndDeck: [[], [], [], [], [], []],
         actionButtons: ["Attack", "Use Ability"]
     };
 
@@ -31,14 +31,15 @@ class GamePlayJumbotron extends Component {
 
     dealCards = (ableToDeal) => {
         if (ableToDeal === true) {
-            let top5 = this.state.entirePlayerDeck.filter((item, index) => { if (index < 5) return item })
+            let top5 = this.state.entirePlayerDeck[0].filter((item, index) => (index < 5) ? item : '')
             this.state.playerHandAndDeck.map((item, index) => {
                 if (index < 5) {
-                    item.pop().push(top5.filter((thing, num) => { if (num === index) return thing }))
+                    item.push(top5.filter((thing, num) =>  (num === index) ? thing : '' ))
                 }
             })
             this.setState({ playerHandAndDeck: this.state.playerHandAndDeck });
         }
+        console.log(this.state.playerHandAndDeck)
     }
 
 
@@ -77,7 +78,7 @@ class GamePlayJumbotron extends Component {
                 <Row>
                     {this.state.playerHandAndDeck.map((item, index) => (
                         <Col md={{ size: 2 }} style={{ border: 'solid' }}>
-                            {index === 5 ? deckSymbol : item[0]}
+                            {index === 5 ? <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} onClick={() => this.dealCards(true)} src={process.env.PUBLIC_URL + 'battleImages/deck.jpg'} alt='playing card img'/> : <Card style={{ width: '100%', height: '100%', objectFit: 'cover' }} onMouseEnter={(e, item, index) => this.onHover(true)} onMouseLeave={(e, item, index) => this.onHover(false)}>EMPTY</Card>}
                         </Col>
                     ))}
                 </Row>
