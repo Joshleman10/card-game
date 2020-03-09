@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button, Card } from 'reactstrap';
+import BootstrapCard from '../../InfoForCards/bootstrapCard';
 // import { allCards } from '../../InfoForCards/ViewAllCards'
 import '../../artAndStyles/css/MainGamePlayJumbotron.css'
 
@@ -15,7 +16,7 @@ class GamePlayJumbotron extends Component {
         oppHandAndDeck: ["OppHand", "OppDeck"],
         userLRAndFeet: ["UserL", "UserR", "UserFeet"],
         userHelmChestAndHands: ["UserH", "UserC", "UserHands"],
-        playerHandAndDeck: [[], [], [], [], [], []],
+        playerHandAndDeck: [[[], [], [], [], []], []],
         actionButtons: ["Attack", "Use Ability"]
     };
 
@@ -32,14 +33,14 @@ class GamePlayJumbotron extends Component {
     dealCards = (ableToDeal) => {
         if (ableToDeal === true) {
             let top5 = this.state.entirePlayerDeck[0].filter((item, index) => (index < 5) ? item : '')
-            this.state.playerHandAndDeck.map((item, index) => {
+            this.state.playerHandAndDeck[0].map((item, index) => {
                 if (index < 5) {
                     item.push(top5.filter((thing, num) =>  (num === index) ? thing : '' ))
                 }
             })
             this.setState({ playerHandAndDeck: this.state.playerHandAndDeck });
         }
-        console.log(this.state.playerHandAndDeck)
+        console.log(this.state.playerHandAndDeck[0])
     }
 
 
@@ -76,11 +77,24 @@ class GamePlayJumbotron extends Component {
                     ))}
                 </Row>
                 <Row>
-                    {this.state.playerHandAndDeck.map((item, index) => (
+                    {this.state.playerHandAndDeck[0].map((item, index) => (
                         <Col md={{ size: 2 }} style={{ border: 'solid' }}>
-                            {index === 5 ? <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} onClick={() => this.dealCards(true)} src={process.env.PUBLIC_URL + 'battleImages/deck.jpg'} alt='playing card img'/> : <Card style={{ width: '100%', height: '100%', objectFit: 'cover' }} onMouseEnter={(e, item, index) => this.onHover(true)} onMouseLeave={(e, item, index) => this.onHover(false)}>EMPTY</Card>}
+                            {item.length > 0 ? <BootstrapCard 
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }} onMouseEnter={(e, item, index) => this.onHover(true)} onMouseLeave={(e, item, index) => this.onHover(false)}
+                                onClick={((e) => this.handleClick(e, item))}
+                                key={index} 
+                                id={item[0][0].id}
+                                name={item[0][0].name}
+                                image={item[0][0].image}
+                                rarity={item[0][0].rarity}
+                                attack={item[0][0].attack}
+                                defense={item[0][0].defense}
+                                ability={item[0][0].ability}
+                                cost={item[0][0].cost}
+                            /> : <Card style={{ width: '100%', height: '100%', objectFit: 'cover' }}>EMPTY</Card>}
                         </Col>
                     ))}
+                    <Col><img style={{ width: '100%', height: '100%', objectFit: 'cover' }} onClick={() => this.dealCards(true)} src={process.env.PUBLIC_URL + 'battleImages/deck.jpg'} alt='playing card img'/></Col>
                 </Row>
                 <Row>
                     {this.state.actionButtons.map((item, index) => (
